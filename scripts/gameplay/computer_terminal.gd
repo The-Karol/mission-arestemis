@@ -83,20 +83,20 @@ func interact(player: Node) -> void:
 	player.ui.open_terminal(self)
 
 func access_error() -> String:
-	if GameState.selected_mission.is_empty():
+	if GameState.selected_mission.is_empty() and not GameState.sandbox:
 		return "No active mission. Visit the Project Office on Level 02."
 	if reader.busy:
 		return "Reader busy. Please wait."
 	if terminal_type == "spacecraft":
 		if not reader.has_cartridge():
 			return "Insert your data cartridge into the reader before designing a spacecraft."
-		if reader.has_cartridge() and reader.cartridge.mission_id != "" and reader.cartridge.mission_id != GameState.selected_mission:
+		if not GameState.sandbox and reader.has_cartridge() and reader.cartridge.mission_id != "" and reader.cartridge.mission_id != GameState.selected_mission:
 			return "Cartridge belongs to another mission."
 		return ""
 	if not reader.has_cartridge():
 		return "Required design cartridge not inserted. Exit the terminal and insert it into the physical reader."
 	var cart := reader.cartridge
-	if cart.mission_id != GameState.selected_mission:
+	if not GameState.sandbox and cart.mission_id != GameState.selected_mission:
 		return "Cartridge belongs to another mission."
 	if cart.spacecraft_design.is_empty():
 		return "No spacecraft design data. Use Spacecraft Design first."
@@ -149,7 +149,7 @@ func save_rocket(parts: Array, allow_empty:bool=false) -> String:
 func run_verification() -> String:
 	var error := access_error()
 	if not error.is_empty():
-		if GameState.selected_mission.is_empty():return "FAIL  /  "+error
+		if GameState.selected_mission.is_empty() and not GameState.sandbox:return "FAIL  /  "+error
 		if error.contains("spacecraft"):GameState.set_stage(GameState.Stage.SPACECRAFT_DESIGN)
 		elif error.contains("rocket"):GameState.set_stage(GameState.Stage.ROCKET_DESIGN)
 		else:GameState.set_objective("Insert the design cartridge","Use the physical reader at Pre-launch Verification.",global_position)
@@ -222,5 +222,6 @@ func save_sandbox_cartridge() -> String:
 	if not GameState.sandbox_design.is_empty():cart.write_spacecraft("",GameState.sandbox_design)
 	cart.write_rocket({"parts":GameState.sandbox_parts.duplicate(true),"payload_type":GameState.sandbox_spacecraft})
 	GameAudio.play_effect("saved")
+	GameState.set_stage(GameState.Stage.PRELAUNCH_CHECK if terminal_type=="rocket" else GameState.Stage.ROCKET_DESIGN)
 	SaveStore.save_now()
 	return "Saved to cartridge. Exit and take it to the next workstation."

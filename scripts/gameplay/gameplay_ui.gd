@@ -311,7 +311,7 @@ func _build_terminal_content(terminal: ComputerTerminal) -> void:
 	if terminal.terminal_type=="verification":
 		_open_verification(column,terminal)
 		return
-	if GameState.sandbox:
+	if GameState.sandbox and terminal.terminal_type in ["spacecraft","rocket"]:
 		_build_sandbox_ui(column)
 		return
 	var error := terminal.access_error()
@@ -527,7 +527,7 @@ func _build_sandbox_ui(column: VBoxContainer) -> void:
 	else:
 		SpaceUI.label(column,"WORKSHOP DESIGN RECORD",28)
 		SpaceUI.label(column,"Spacecraft: %s\nRocket components: %d" % [GameState.sandbox_spacecraft,GameState.sandbox_parts.size()],23,SpaceUI.GREEN)
-		SpaceUI.label(column,"Free design exploration. Flight simulation is not available yet.",20,SpaceUI.MUTED,true)
+		SpaceUI.label(column,"Save your designs, verify the cartridge in the Test Laboratory, then launch from Mission Control.",20,SpaceUI.MUTED,true)
 
 func _refresh_catalog() -> void:
 	SpaceUI.clear(_part_list)

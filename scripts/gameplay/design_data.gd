@@ -65,8 +65,9 @@ static func payload_design(terminal: Node) -> Dictionary:
 	var m := GameState.mission()
 	var kind := GameState.sandbox_spacecraft if GameState.sandbox else str(m.get("spacecraft_type","Satellite"))
 	var saved: Dictionary = GameState.sandbox_design if GameState.sandbox else {}
-	if not GameState.sandbox and terminal.reader.has_cartridge():
+	if terminal.reader.has_cartridge() and (not GameState.sandbox or terminal.terminal_type in ["verification","launch"]):
 		saved = terminal.reader.cartridge.spacecraft_design
+		kind=str(saved.get("type",kind))
 	if terminal.terminal_type=="spacecraft" and GameState.editor_drafts.has("spacecraft"):
 		saved=GameState.editor_drafts.spacecraft
 		kind=saved.type

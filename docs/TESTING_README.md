@@ -63,6 +63,8 @@ You begin beside the payload scientist and spacecraft computer. The scientist ex
 
 Changing the spacecraft does not erase the launcher. Recheck its performance against the new payload.
 
+Sandbox flight profiles are selected automatically: Satellite -> Earth imaging; Rover -> lunar ice; Space Telescope -> exoplanets; Interplanetary Probe -> asteroid survey; Cargo Spacecraft -> station refueling. The computers show the profile requirements. Save the spacecraft and launcher to your cartridge, run Pre-launch Verification, then carry the verified cartridge to Mission Control and select BEGIN LAUNCH SEQUENCE. The flight, results and SAVE TO WORKSHOP work as in Mission mode.
+
 ## Rocket Workshop and sharing
 
 After a successful mission:

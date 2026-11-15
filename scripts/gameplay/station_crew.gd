@@ -67,7 +67,7 @@ func interact(player: Node) -> void:
 	if role=="scientist":
 		lines.append("Tip: power generation should exceed instrument demand. Batteries carry the spacecraft through eclipse or lunar night.")
 		lines.append("A spectrometer separates light into wavelengths. Different materials leave different spectral signatures.")
-		if GameState.sandbox:lines=["Welcome to Sandbox. You can experiment with any spacecraft and rocket design, without a mission deadline.","Start at the Spacecraft Design computer beside me. Choose a spacecraft from the picture cards, then add its instruments and onboard systems.","A cartridge is already in the computer reader. Save your concept, exit, then take the cartridge to Rocket Assembly. You can change the design whenever you like."]
+		if GameState.sandbox:lines=["Welcome to Sandbox. You can experiment with any spacecraft and rocket design, without a mission deadline.","Start at the Spacecraft Design computer beside me. Choose a spacecraft from the picture cards, then add its instruments and onboard systems.","A cartridge is already in the computer reader. Save your concept, exit, then take the cartridge to Rocket Assembly. Your spacecraft type sets the flight profile shown on the computers. Meet its requirements, verify your cartridge in the Test Laboratory, then launch from Mission Control."]
 	elif role=="builder":
 		lines.append("Tip: select a part on the drawing to remove it. Stage 1 lifts the vehicle; an optional upper stage supplies velocity higher up.")
 		lines.append("Discarding an empty stage reduces the mass that the remaining engine must accelerate.")

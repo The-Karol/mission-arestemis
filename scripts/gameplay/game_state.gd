@@ -66,6 +66,13 @@ func new_session(free_workshop: bool = false) -> void:
 		set_objective("Choose your spacecraft", "Use the Spacecraft Design computer beside the scientist. All designs are available.",Vector3(10,4,5.5))
 
 func mission() -> Dictionary:
+	if sandbox:
+		var profile:String={"Satellite":"earth_imaging","Rover":"lunar_ice","Space Telescope":"exoplanets","Interplanetary Probe":"asteroid","Automated Cargo Spacecraft":"station_refueling"}.get(sandbox_spacecraft,"earth_imaging")
+		for entry in missions:
+			if entry.id==profile:
+				var flight:Dictionary=entry.duplicate(true)
+				flight.title="Sandbox / "+str(entry.title)
+				return flight
 	for entry in missions:
 		if entry.id == selected_mission:
 			return entry
@@ -94,7 +101,7 @@ func set_stage(value: Stage) -> void:
 		Stage.PRELAUNCH_CHECK:
 			set_objective("Take the rocket design to Pre-launch Verification", "KKA  /  Level 02  /  Test Laboratory. Insert your cartridge.", Vector3(9, 4, 12))
 		Stage.READY_FOR_LAUNCH:
-			set_objective("Deliver the verified cartridge to Mission Control", "CUZ  /  Level 01  /  Use the enclosed passage. Flight is a later stage.", Vector3(54, 0, 6.35))
+			set_objective("Deliver the verified cartridge to Mission Control", "CUZ  /  Level 01  /  Use the enclosed passage, insert the cartridge and begin launch.", Vector3(54, 0, 6.35))
 	stage_changed.emit()
 
 func set_objective(text: String, hint: String = "", target: Vector3 = Vector3.ZERO) -> void:
