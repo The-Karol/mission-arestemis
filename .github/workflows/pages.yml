@@ -14,8 +14,8 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  RELEASE_TAG: web-2026-11-15-sandbox-fix
-  WEB_SHA256: 540a9eed358de5ebec6d7f9303b5fb710cffa17270c6b0d47050a9f924a0f0ba
+  RELEASE_TAG: web-2026-11-15-ai-disclosure
+  WEB_SHA256: d51e9894bb0277e9f70bec13e9d13675795ffb0bfbae9886309a7811c0d7c6a4
 
 jobs:
   deploy:
