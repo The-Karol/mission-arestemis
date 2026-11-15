@@ -14,18 +14,20 @@ The focus is on understanding engineering choices: payload requirements, power, 
 
 ## Features
 
-- **Mission mode** — an engineer-guided introduction, mission selection, spacecraft design, rocket assembly and pre-launch verification.
-- **Sandbox** — start beside the payload scientist, choose a spacecraft and experiment with its systems and launcher.
-- **Rocket Workshop** — save successful designs, reopen them in Sandbox and exchange JSON blueprints with other players.
-- **Interactive spaceport** — NPC advice, voiced typewriter dialogue, computer workstations and objective guidance.
-- **Mission cinematics** — countdown, lift-off, 3D trajectory views, stage separation, payload deployment and a result screen.
-- **Local saves and settings** — separate campaign and Sandbox progress, graphics presets and audio controls.
+- **Mission mode** â€” an engineer-guided introduction, mission selection, spacecraft design, rocket assembly and pre-launch verification.
+- **Sandbox** â€” start beside the payload scientist, choose a spacecraft and experiment with its systems and launcher.
+- **Rocket Workshop** â€” save successful designs, reopen them in Sandbox and exchange JSON blueprints with other players.
+- **Interactive spaceport** â€” NPC advice, voiced typewriter dialogue, computer workstations and objective guidance.
+- **Mission cinematics** â€” countdown, lift-off, 3D trajectory views, stage separation, payload deployment and a result screen.
+- **Local saves and settings** â€” separate campaign and Sandbox progress, graphics presets and audio controls.
 
 ![Illustrated spacecraft selection in Sandbox](docs/images/spacecraft-selection.png)
 
 ## Play
 
-**Status: playable development build.** A hosted browser release has not been published yet.
+**[Play in your browser](https://the-karol.github.io/mission-arestemis/)**
+
+Status: playable development build. A keyboard and mouse are required. The first load downloads the game assets and may take a little while.
 
 For a packaged Windows build, extract the archive and run **Start Game.bat**. Keep its local server window open while playing. No Godot or Python installation is needed. Use a browser with WebGL 2 and hardware acceleration; do not open `index.html` directly.
 
@@ -59,7 +61,7 @@ A blueprint includes the launcher and its spacecraft. Workshop data and progress
 2. Open `project.godot` in **Godot 4.7.2** and allow asset imports to finish.
 3. Press **F5** to start the game.
 
-The project uses the **Compatibility** renderer and a single-threaded web export. See the [development guide](docs/DEVELOPMENT.md) for project structure, export tools, focused checks and static hosting notes. Export templates must match the engine version; generated builds and local caches are not included in the repository.
+The project uses the **Compatibility** renderer and a single-threaded web export. See the [deployment guide](docs/DEPLOYMENT.md) for updating GitHub Pages and the [development guide](docs/DEVELOPMENT.md) for project structure, export tools, focused checks and static hosting notes. Export templates must match the engine version; generated builds and local caches are not included in the repository.
 
 ## Feedback
 

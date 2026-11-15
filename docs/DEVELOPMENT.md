@@ -72,7 +72,7 @@ Browser verification is also needed for downloads, file import and local storage
 
 Publish the **contents of `build/web/`** with `index.html` at the site root. The current single-threaded build does not need cross-origin isolation headers. Serve through HTTP(S), not `file://`.
 
-GitHub Pages is a suitable static hosting option. The current PCK is over GitHub's normal 100 MiB file limit: deploy the web directory as a Pages artifact through GitHub Actions rather than committing that PCK directly. Publishing requires access to the target repository and its Pages settings. No public deployment is configured by this README.
+GitHub Pages is a suitable static hosting option. The current PCK is over GitHub's normal 100 MiB file limit: deploy the web directory as a Pages artifact through GitHub Actions rather than committing that PCK directly. Publishing requires access to the target repository and its Pages settings. The repository now deploys a tested release archive through `.github/workflows/pages.yml`. See [deployment instructions](DEPLOYMENT.md).
 
 See [Godot web export documentation](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html), [GitHub Pages custom workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) and [Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
 
