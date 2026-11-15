@@ -15,7 +15,9 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Mission Arestemis"
-config/description="Explore Hyperion, choose a mission and carry your designs between engineering stations."
+config/description="An AI-developed educational space engineering game. Explore Hyperion, design spacecraft and launch missions. Human concept and creative direction by The-Karol."
+config/metadata/development_method="AI-developed with human creative direction"
+config/metadata/ai_disclosure="AI was used to develop the game, including code, interface and gameplay implementation."
 run/main_scene="res://scenes/ui/main_menu.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 run/main_scene.qa="res://tests/stage_two_test.tscn"

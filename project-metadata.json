@@ -1,0 +1,20 @@
+{
+  "name": "Mission Arestemis",
+  "type": "educational browser game",
+  "engine": "Godot",
+  "development": {
+    "ai_used": true,
+    "method": "AI-developed with human creative direction",
+    "human_direction": "The-Karol",
+    "ai_contributions": [
+      "programming",
+      "gameplay systems",
+      "user interface",
+      "debugging",
+      "documentation"
+    ],
+    "asset_note": "Includes existing models and audio. AI development does not imply that every asset was AI-generated."
+  },
+  "repository": "https://github.com/The-Karol/mission-arestemis",
+  "website": "https://the-karol.github.io/mission-arestemis/"
+}
