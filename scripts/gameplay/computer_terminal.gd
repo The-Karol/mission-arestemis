@@ -214,3 +214,13 @@ func run_verification() -> String:
 		lines.append("PASS  /  Payload, electrical systems, launcher and mission performance verified.")
 		lines.append("NEXT  /  Remove the cartridge and take it to Mission Control.")
 	return "\n".join(lines)
+
+func save_sandbox_cartridge() -> String:
+	if not reader.has_cartridge():return "Insert the Sandbox cartridge into this computer's reader, then save again."
+	if reader.busy:return "Reader busy. Please wait, then save again."
+	var cart:=reader.cartridge
+	if not GameState.sandbox_design.is_empty():cart.write_spacecraft("",GameState.sandbox_design)
+	cart.write_rocket({"parts":GameState.sandbox_parts.duplicate(true),"payload_type":GameState.sandbox_spacecraft})
+	GameAudio.play_effect("saved")
+	SaveStore.save_now()
+	return "Saved to cartridge. Exit and take it to the next workstation."

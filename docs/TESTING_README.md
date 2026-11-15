@@ -59,7 +59,7 @@ The mission result opens automatically after the flight. Flight presentation is 
 
 ## Sandbox
 
-You begin beside the payload scientist and spacecraft computer. The scientist explains how to start. Choose a spacecraft from the picture cards, fit its instruments and systems, then save your concept and visit Rocket Assembly. There is no story cartridge hunt or mission deadline in this mode.
+You begin beside the payload scientist and spacecraft computer. The scientist explains how to start. Choose a spacecraft from the picture cards, fit its instruments and systems, then save your concept and visit Rocket Assembly. A data cartridge is already inserted into the spacecraft computer. Save your design, remove the cartridge from the reader and carry it to Rocket Assembly. Older Sandbox saves without a cartridge receive one automatically. There is no story cartridge hunt or mission deadline in this mode.
 
 Changing the spacecraft does not erase the launcher. Recheck its performance against the new payload.
 

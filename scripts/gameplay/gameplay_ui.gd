@@ -510,7 +510,7 @@ func _build_rocket_ui(column: VBoxContainer) -> void:
 		if GameState.sandbox:
 			GameAudio.play_effect("saved")
 			GameState.sandbox_parts = _parts.duplicate(true)
-			_result.text = "Workshop concept saved for this session."
+			_result.text = _terminal.save_sandbox_cartridge()
 		else: _result.text = _terminal.save_rocket(_parts,_parts.is_empty()))
 	_refresh_catalog()
 	_refresh_parts()

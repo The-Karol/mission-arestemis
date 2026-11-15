@@ -227,8 +227,7 @@ func _save() -> void:
 	if GameState.sandbox:
 		GameState.sandbox_spacecraft=kind
 		GameState.sandbox_design=design
-		GameAudio.play_effect("saved")
-		saved.text="Workshop spacecraft saved."
+		saved.text=terminal.save_sandbox_cartridge()
 	else:
 		saved.text=terminal.save_spacecraft(design).get_slice("\n",0)
 

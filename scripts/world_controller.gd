@@ -123,9 +123,13 @@ func _ready() -> void:
 	ready_to_play = true
 	presentation_ready.emit()
 	print("Facility ready")
+	if GameState.sandbox and not resuming:_ensure_sandbox_cartridge()
 	SaveStore.bind_world(self)
 	if resuming:
 		SaveStore.apply_world(self)
+		if GameState.sandbox:
+			_ensure_sandbox_cartridge()
+			SaveStore.save_now()
 	elif is_instance_valid(elevator):
 		_run_elevator_intro(elevator)
 	else:
@@ -173,3 +177,15 @@ func _sandbox_welcome() -> void:
 		if crew.get_script()==preload("res://scripts/gameplay/station_crew.gd") and crew.role=="scientist":
 			crew.interact(player)
 			return
+
+func _ensure_sandbox_cartridge() -> void:
+	# Migrate old Sandbox saves without duplicating a carried or docked cartridge.
+	for cart in get_tree().get_nodes_in_group("cartridges"):
+		if is_ancestor_of(cart):return
+	var terminal:ComputerTerminal=get_node("SpacecraftTerminal")
+	var cart:=terminal.reader.produce_cartridge()
+	if cart==null:return
+	if not GameState.sandbox_design.is_empty():
+		cart.write_spacecraft("",GameState.sandbox_design)
+	if not GameState.sandbox_parts.is_empty():
+		cart.write_rocket({"parts":GameState.sandbox_parts.duplicate(true),"payload_type":GameState.sandbox_spacecraft})
