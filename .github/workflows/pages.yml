@@ -1,0 +1,50 @@
+name: Deploy web game to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pages.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  RELEASE_TAG: web-2026-11-15
+  WEB_SHA256: 6fbe79a18481b6e544c8f58e74cc89c5497dba79f2807bfb07a6858e36be90ca
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download the tested web build
+        env:
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          curl --fail --location --retry 3 "https://github.com/${REPOSITORY}/releases/download/${RELEASE_TAG}/pages-web.zip" -o /tmp/pages-web.zip
+          echo "${WEB_SHA256}  /tmp/pages-web.zip" | sha256sum --check
+          mkdir -p _site
+          unzip -q /tmp/pages-web.zip -d _site
+          test -s _site/index.html
+          test -s _site/index.pck
+          test -s _site/index.wasm
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
