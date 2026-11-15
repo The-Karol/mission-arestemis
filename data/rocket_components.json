@@ -1,0 +1,631 @@
+[
+ {
+  "id": "engine_s",
+  "name": "Rutherford Sea-Level",
+  "category": "ENGINES",
+  "dry_kg": 35.0,
+  "cost": 10,
+  "thrust_kn": 24.9,
+  "isp": 311,
+  "fuel": "RP-1",
+  "vacuum": false,
+  "mass": 0.035,
+  "plate": "engine_s",
+  "specs": {
+   "Fuel": "LOX + kerosene/RP-1 - REAL",
+   "Thrust": "~24.9 kN peak per engine - DERIVED (224 kN / 9)",
+   "Isp": "311 s - REAL",
+   "Engine mass": "~35 kg - ESTIMATED/GAME",
+   "Restart": "No for the first stage - GAME",
+   "Throttling": "Limited",
+   "Cost tier": "1",
+   "Reliability": "0.94 - GAME",
+   "Best use": "Light launchers and small satellites",
+   "Drawback": "Insufficient thrust for heavy spacecraft"
+  }
+ },
+ {
+  "id": "engine_m",
+  "name": "Merlin 1D Sea-Level",
+  "category": "ENGINES",
+  "dry_kg": 470.0,
+  "cost": 20,
+  "thrust_kn": 845,
+  "isp": 282,
+  "fuel": "RP-1",
+  "vacuum": false,
+  "mass": 0.47,
+  "plate": "engine_m",
+  "specs": {
+   "Fuel": "LOX + RP-1 - REAL",
+   "Thrust": "845 kN - REAL",
+   "Isp": "~282 s sea level - ESTIMATED/public reference value",
+   "Mass": "~470 kg - ESTIMATED",
+   "Throttling": "Yes",
+   "Reuse": "Possible with a suitable vehicle design",
+   "Cost tier": "2",
+   "Reliability": "0.97 - GAME",
+   "Best use": "Medium and heavy launches"
+  }
+ },
+ {
+  "id": "engine_l",
+  "name": "RS-25",
+  "category": "ENGINES",
+  "dry_kg": 3520.0,
+  "cost": 50,
+  "thrust_kn": 1860,
+  "isp": 452,
+  "fuel": "LH2",
+  "vacuum": false,
+  "mass": 3.52,
+  "plate": "engine_l",
+  "specs": {
+   "Fuel": "LOX + LH2 - REAL",
+   "Mass": "~3,520 kg - REAL",
+   "Thrust": "~2,279 kN vacuum - REAL",
+   "Isp": "452 s vacuum - REAL",
+   "Throttling": "About 67-109% rated power - REAL",
+   "Gimbal": "±11 deg - REAL",
+   "Cost tier": "5",
+   "Reliability": "0.995 - GAME",
+   "Best use": "Super-heavy core stage",
+   "Drawbacks": "High cost and large hydrogen tanks"
+  }
+ },
+ {
+  "id": "be4",
+  "name": "BE-4",
+  "category": "ENGINES",
+  "dry_kg": 2500.0,
+  "cost": 40,
+  "thrust_kn": 2846,
+  "isp": 335,
+  "fuel": "CH4",
+  "vacuum": false,
+  "mass": 2.5,
+  "plate": "be4",
+  "specs": {
+   "Fuel": "LOX + LNG/methane - REAL",
+   "Thrust": "2,846 kN max - REAL",
+   "Deep-throttle thrust": "978 kN - REAL",
+   "Mass": "~2,500 kg - ESTIMATED/GAME",
+   "Isp": "~320 s sea level / ~350 s vacuum - ESTIMATED/GAME",
+   "Throttling": "Yes - REAL",
+   "Cost tier": "4",
+   "Reliability": "0.96 - GAME",
+   "Best use": "Heavy first stage",
+   "Advantage": "Methane burns cleaner than RP-1 and suits reusable engines"
+  }
+ },
+ {
+  "id": "rl10",
+  "name": "RL10C-2",
+  "category": "ENGINES",
+  "dry_kg": 300.0,
+  "cost": 40,
+  "thrust_kn": 110.1,
+  "isp": 465,
+  "fuel": "LH2",
+  "vacuum": true,
+  "mass": 0.3,
+  "plate": "rl10c2",
+  "specs": {
+   "Fuel": "LOX + LH2 - REAL",
+   "Thrust": "110.1 kN - REAL",
+   "Isp": "~465 s - ESTIMATED based on the RL10 family",
+   "Mass": "~300 kg - ESTIMATED",
+   "Restart": "Yes - REAL",
+   "At sea level": "Poor fit",
+   "Cost tier": "4",
+   "Reliability": "0.985 - GAME",
+   "Best use": "Upper stage, GEO, TLI, deep-space injection"
+  }
+ },
+ {
+  "id": "be3u",
+  "name": "BE-3U",
+  "category": "ENGINES",
+  "dry_kg": 1250.0,
+  "cost": 40,
+  "thrust_kn": 890,
+  "isp": 450,
+  "fuel": "LH2",
+  "vacuum": true,
+  "mass": 1.25,
+  "plate": "be3u",
+  "specs": {
+   "Fuel": "LOX + LH2 - REAL",
+   "Thrust": "890 kN max - REAL",
+   "Minimum thrust": "445 kN - REAL",
+   "Isp": "~450 s - ESTIMATED/GAME",
+   "Mass": "~1,250 kg - ESTIMATED/GAME",
+   "Restart": "Yes - REAL",
+   "Cost tier": "4",
+   "Reliability": "0.96 - GAME",
+   "Best use": "Heavy upper stage, GEO/deep-space"
+  }
+ },
+ {
+  "id": "tank_s",
+  "name": "Kerolox Tank - Small",
+  "category": "FUEL TANKS",
+  "dry_kg": 1700.0,
+  "cost": 10,
+  "propellant_kg": 20000.0,
+  "fuel": "RP-1",
+  "diameter_m": 1.5,
+  "mass": 21.7,
+  "plate": "tank_s",
+  "specs": {
+   "Fuel": "LOX + RP-1",
+   "Usable propellant mass": "20,000 kg - GAME",
+   "Tank dry mass": "1,700 kg - GAME",
+   "Diameter": "1.5 m",
+   "Cost tier": "1",
+   "Suitability": "Rutherford, Merlin"
+  }
+ },
+ {
+  "id": "tank_m",
+  "name": "Kerolox Tank - Medium",
+  "category": "FUEL TANKS",
+  "dry_kg": 7500.0,
+  "cost": 20,
+  "propellant_kg": 100000.0,
+  "fuel": "RP-1",
+  "diameter_m": 3.5,
+  "mass": 107.5,
+  "plate": "tank_m",
+  "specs": {
+   "Fuel": "100,000 kg",
+   "Dry mass": "7,500 kg",
+   "Diameter": "3.5 m",
+   "Cost tier": "2"
+  }
+ },
+ {
+  "id": "tank_l",
+  "name": "Kerolox Tank - Large",
+  "category": "FUEL TANKS",
+  "dry_kg": 23000.0,
+  "cost": 30,
+  "propellant_kg": 350000.0,
+  "fuel": "RP-1",
+  "diameter_m": 5.0,
+  "mass": 373.0,
+  "plate": "tank_l",
+  "specs": {
+   "Fuel": "350,000 kg",
+   "Dry mass": "23,000 kg",
+   "Diameter": "5.0 m",
+   "Cost tier": "3"
+  }
+ },
+ {
+  "id": "methane_m",
+  "name": "Methalox Tank - Medium",
+  "category": "FUEL TANKS",
+  "dry_kg": 9000.0,
+  "cost": 20,
+  "propellant_kg": 120000.0,
+  "fuel": "CH4",
+  "diameter_m": 4.0,
+  "mass": 129.0,
+  "plate": "tank_m",
+  "specs": {
+   "Fuel": "120,000 kg",
+   "Dry mass": "9,000 kg",
+   "Diameter": "4.0 m",
+   "Cost tier": "2",
+   "Suitability": "BE-4"
+  }
+ },
+ {
+  "id": "methane_l",
+  "name": "Methalox Tank - Large",
+  "category": "FUEL TANKS",
+  "dry_kg": 29000.0,
+  "cost": 30,
+  "propellant_kg": 400000.0,
+  "fuel": "CH4",
+  "diameter_m": 6.0,
+  "mass": 429.0,
+  "plate": "tank_l",
+  "specs": {
+   "Fuel": "400,000 kg",
+   "Dry mass": "29,000 kg",
+   "Diameter": "6.0 m",
+   "Cost tier": "3"
+  }
+ },
+ {
+  "id": "hydro_s",
+  "name": "Hydrolox Tank - Small",
+  "category": "FUEL TANKS",
+  "dry_kg": 2000.0,
+  "cost": 20,
+  "propellant_kg": 15000.0,
+  "fuel": "LH2",
+  "diameter_m": 3.0,
+  "mass": 17.0,
+  "plate": "tank_s",
+  "specs": {
+   "Fuel": "15,000 kg",
+   "Dry mass": "2,000 kg",
+   "Diameter": "3.0 m",
+   "Cost tier": "2",
+   "Suitability": "RL10-class"
+  }
+ },
+ {
+  "id": "hydro_m",
+  "name": "Hydrolox Tank - Medium",
+  "category": "FUEL TANKS",
+  "dry_kg": 9000.0,
+  "cost": 30,
+  "propellant_kg": 80000.0,
+  "fuel": "LH2",
+  "diameter_m": 5.0,
+  "mass": 89.0,
+  "plate": "tank_m",
+  "specs": {
+   "Fuel": "80,000 kg",
+   "Dry mass": "9,000 kg",
+   "Diameter": "5.0 m",
+   "Cost tier": "3"
+  }
+ },
+ {
+  "id": "hydro_l",
+  "name": "Hydrolox Tank - Large",
+  "category": "FUEL TANKS",
+  "dry_kg": 42000.0,
+  "cost": 50,
+  "propellant_kg": 450000.0,
+  "fuel": "LH2",
+  "diameter_m": 8.0,
+  "mass": 492.0,
+  "plate": "tank_l",
+  "specs": {
+   "Fuel": "450,000 kg",
+   "Dry mass": "42,000 kg",
+   "Diameter": "8.0 m",
+   "Cost tier": "5",
+   "Suitability": "RS-25-class"
+  }
+ },
+ {
+  "id": "booster_s",
+  "name": "Light Solid Booster",
+  "category": "BOOSTERS",
+  "dry_kg": 3000.0,
+  "cost": 10,
+  "thrust_kn": 450.0,
+  "propellant_kg": 15000.0,
+  "burn_s": 70.0,
+  "mass": 18.0,
+  "plate": "booster_s",
+  "specs": {
+   "Wet mass": "18,000 kg - GAME",
+   "Fuel": "15,000 kg",
+   "Dry mass": "3,000 kg",
+   "Average thrust": "450 kN",
+   "Burn duration": "70 s",
+   "Throttling": "No",
+   "Restart": "No",
+   "Cost tier": "1"
+  }
+ },
+ {
+  "id": "booster_m",
+  "name": "Medium Solid Booster",
+  "category": "BOOSTERS",
+  "dry_kg": 12000.0,
+  "cost": 20,
+  "thrust_kn": 1800.0,
+  "propellant_kg": 68000.0,
+  "burn_s": 100.0,
+  "mass": 80.0,
+  "plate": "booster_m",
+  "specs": {
+   "Wet mass": "80,000 kg",
+   "Fuel": "68,000 kg",
+   "Dry mass": "12,000 kg",
+   "Average thrust": "1,800 kN",
+   "Burn duration": "100 s",
+   "Cost tier": "2"
+  }
+ },
+ {
+  "id": "booster_h",
+  "name": "Heavy Solid Booster",
+  "category": "BOOSTERS",
+  "dry_kg": 99300.0,
+  "cost": 50,
+  "thrust_kn": 14679.0,
+  "propellant_kg": 626700,
+  "burn_s": 126.0,
+  "mass": 726.0,
+  "plate": "booster_heavy",
+  "specs": {
+   "Loaded mass": "~726,000 kg - REAL",
+   "Empty mass": "~99,300 kg - REAL",
+   "Lift-off thrust": "~14,679 kN - REAL",
+   "Maximum thrust": "about 16,000 kN - REAL",
+   "Burn time": "~126 s - REAL",
+   "Throttling": "No",
+   "Cost tier": "5"
+  }
+ },
+ {
+  "id": "interstage_small",
+  "name": "Small Interstage",
+  "category": "INTERSTAGES",
+  "dry_kg": 120.0,
+  "cost": 10,
+  "upper_limit_kg": 8000.0,
+  "diameter_m": 1.5,
+  "mass": 0.12,
+  "plate": "interstage",
+  "specs": {
+   "Mass": "120 kg - GAME",
+   "Diameter": "up to 1.5 m",
+   "Max supported upper-stage mass": "8 t",
+   "Cost tier": "1"
+  }
+ },
+ {
+  "id": "interstage",
+  "name": "Medium Interstage",
+  "category": "INTERSTAGES",
+  "dry_kg": 550.0,
+  "cost": 20,
+  "upper_limit_kg": 60000.0,
+  "diameter_m": 4.0,
+  "mass": 0.55,
+  "plate": "interstage",
+  "specs": {
+   "Mass": "550 kg",
+   "Diameter": "up to 4 m",
+   "Max supported upper-stage mass": "60 t",
+   "Cost tier": "2"
+  }
+ },
+ {
+  "id": "interstage_heavy",
+  "name": "Heavy Interstage",
+  "category": "INTERSTAGES",
+  "dry_kg": 1800.0,
+  "cost": 30,
+  "upper_limit_kg": 250000.0,
+  "diameter_m": 8.0,
+  "mass": 1.8,
+  "plate": "interstage",
+  "specs": {
+   "Mass": "1,800 kg",
+   "Diameter": "up to 8 m",
+   "Max supported upper-stage mass": "250 t",
+   "Cost tier": "3"
+  }
+ },
+ {
+  "id": "sep_standard",
+  "name": "Standard Separation Ring",
+  "category": "SEPARATION",
+  "dry_kg": 40.0,
+  "cost": 10,
+  "mass": 0.04,
+  "plate": "avionics",
+  "specs": {
+   "Mass": "40 kg - GAME",
+   "Power": "<100 W brief peak",
+   "Reliability": "0.985",
+   "Cost tier": "1"
+  }
+ },
+ {
+  "id": "sep_redundant",
+  "name": "Redundant Separation Ring",
+  "category": "SEPARATION",
+  "dry_kg": 65.0,
+  "cost": 20,
+  "mass": 0.065,
+  "plate": "avionics",
+  "specs": {
+   "Mass": "65 kg",
+   "Power": "<150 W brief peak",
+   "Reliability": "0.997",
+   "Cost tier": "2"
+  }
+ },
+ {
+  "id": "sep_heavy",
+  "name": "Heavy Pneumatic Separation System",
+  "category": "SEPARATION",
+  "dry_kg": 180.0,
+  "cost": 30,
+  "mass": 0.18,
+  "plate": "avionics",
+  "specs": {
+   "Mass": "180 kg",
+   "Reliability": "0.995",
+   "Cost tier": "3"
+  }
+ },
+ {
+  "id": "fairing_s",
+  "name": "Small Fairing",
+  "category": "FAIRINGS",
+  "dry_kg": 180.0,
+  "cost": 10,
+  "height_m": 2.5,
+  "diameter_m": 1.2,
+  "mass": 0.18,
+  "plate": "fairing_s",
+  "specs": {
+   "Inner diameter": "~1.2 m - Electron-like",
+   "Height": "~2.5 m",
+   "Mass": "~180 kg - ESTIMATED/GAME",
+   "Max payload volume": "~2.5 m^3",
+   "Cost tier": "1"
+  }
+ },
+ {
+  "id": "fairing_m",
+  "name": "Medium Fairing",
+  "category": "FAIRINGS",
+  "dry_kg": 900.0,
+  "cost": 20,
+  "height_m": 6.0,
+  "diameter_m": 3.0,
+  "mass": 0.9,
+  "plate": "fairing_s",
+  "specs": {
+   "Diameter": "3.0 m",
+   "Height": "6 m",
+   "Mass": "~900 kg",
+   "Max payload volume": "~30 m^3",
+   "Cost tier": "2"
+  }
+ },
+ {
+  "id": "fairing_l",
+  "name": "Large Fairing",
+  "category": "FAIRINGS",
+  "dry_kg": 1900.0,
+  "cost": 30,
+  "height_m": 13.1,
+  "diameter_m": 5.2,
+  "mass": 1.9,
+  "plate": "fairing_l",
+  "specs": {
+   "Diameter": "5.2 m - Falcon-class",
+   "Height": "~13.1 m",
+   "Mass": "~1,900 kg - ESTIMATED",
+   "Max payload volume": "~145 m^3 - GAME",
+   "Cost tier": "3"
+  }
+ },
+ {
+  "id": "adapter_small",
+  "name": "Small Payload Adapter",
+  "category": "PAYLOAD",
+  "dry_kg": 35.0,
+  "cost": 10,
+  "payload_limit_kg": 500.0,
+  "mass": 0.035,
+  "plate": "payload",
+  "specs": {
+   "Mass": "35 kg",
+   "Max spacecraft mass": "500 kg",
+   "Cost tier": "1"
+  }
+ },
+ {
+  "id": "payload",
+  "name": "Medium Payload Adapter",
+  "category": "PAYLOAD",
+  "dry_kg": 180.0,
+  "cost": 20,
+  "payload_limit_kg": 6000.0,
+  "mass": 0.18,
+  "plate": "payload",
+  "specs": {
+   "Mass": "180 kg",
+   "Max spacecraft mass": "6,000 kg",
+   "Cost tier": "2"
+  }
+ },
+ {
+  "id": "adapter_heavy",
+  "name": "Heavy Payload Adapter",
+  "category": "PAYLOAD",
+  "dry_kg": 600.0,
+  "cost": 30,
+  "payload_limit_kg": 30000.0,
+  "mass": 0.6,
+  "plate": "payload",
+  "specs": {
+   "Mass": "600 kg",
+   "Max spacecraft mass": "30,000 kg",
+   "Cost tier": "3"
+  }
+ },
+ {
+  "id": "avionics",
+  "name": "Flight Computer - Standard",
+  "category": "AVIONICS",
+  "dry_kg": 2.0,
+  "cost": 20,
+  "mass": 0.002,
+  "plate": "avionics",
+  "specs": {
+   "Mass": "~2.0 kg - GAME",
+   "Power": "~15 W",
+   "Reliability": "0.99",
+   "Guidance processing": "Medium",
+   "Cost tier": "2"
+  }
+ },
+ {
+  "id": "avionics_redundant",
+  "name": "Flight Computer - Redundant",
+  "category": "AVIONICS",
+  "dry_kg": 4.0,
+  "cost": 30,
+  "mass": 0.004,
+  "plate": "avionics",
+  "specs": {
+   "Mass": "~4.0 kg",
+   "Power": "~28 W",
+   "Reliability": "0.999",
+   "Cost tier": "3"
+  }
+ },
+ {
+  "id": "rocket_imu",
+  "name": "3-axis IMU",
+  "category": "AVIONICS",
+  "dry_kg": 0.5,
+  "cost": 10,
+  "mass": 0.0005,
+  "plate": "avionics",
+  "specs": {
+   "Mass": "~0.5 kg - GAME",
+   "Power": "~3 W",
+   "Cost tier": "1"
+  }
+ },
+ {
+  "id": "rocket_gnss",
+  "name": "GNSS Receiver",
+  "category": "AVIONICS",
+  "dry_kg": 0.39,
+  "cost": 10,
+  "mass": 0.00039,
+  "plate": "avionics",
+  "specs": {
+   "Mass": "~0.39 kg - REAL-class",
+   "Power": "~2.4 W",
+   "Position accuracy": "~1.5 m RMS",
+   "Cost tier": "1"
+  }
+ },
+ {
+  "id": "telemetry",
+  "name": "S-band Telemetry Radio",
+  "category": "AVIONICS",
+  "dry_kg": 0.58,
+  "cost": 20,
+  "mass": 0.00058,
+  "plate": "avionics",
+  "specs": {
+   "Mass": "~0.58 kg - REAL-class",
+   "Data rate": "~1.84 Mbps",
+   "RF output": "about 0.8 W / 29 dBm",
+   "Electrical consumption": "~5-10 W - GAME",
+   "Cost tier": "2"
+  }
+ }
+]

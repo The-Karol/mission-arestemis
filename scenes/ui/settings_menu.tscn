@@ -1,0 +1,121 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/settings_menu.gd" id="1"]
+
+[node name="SettingsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(620, 520)
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="CenterContainer/Panel"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Title" type="Label" parent="CenterContainer/Panel/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "SETTINGS"
+horizontal_alignment = 1
+
+[node name="MasterRow" type="HBoxContainer" parent="CenterContainer/Panel/Content"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/Panel/Content/MasterRow"]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+text = "Master Volume"
+
+[node name="MasterVolume" type="HSlider" parent="CenterContainer/Panel/Content/MasterRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.0
+max_value = 1.0
+step = 0.01
+
+[node name="MusicRow" type="HBoxContainer" parent="CenterContainer/Panel/Content"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/Panel/Content/MusicRow"]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+text = "Music Volume"
+
+[node name="MusicVolume" type="HSlider" parent="CenterContainer/Panel/Content/MusicRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.0
+max_value = 1.0
+step = 0.01
+
+[node name="SFXRow" type="HBoxContainer" parent="CenterContainer/Panel/Content"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/Panel/Content/SFXRow"]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+text = "SFX Volume"
+
+[node name="SFXVolume" type="HSlider" parent="CenterContainer/Panel/Content/SFXRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.0
+max_value = 1.0
+step = 0.01
+
+[node name="SensitivityRow" type="HBoxContainer" parent="CenterContainer/Panel/Content"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/Panel/Content/SensitivityRow"]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+text = "Mouse Sensitivity"
+
+[node name="MouseSensitivity" type="HSlider" parent="CenterContainer/Panel/Content/SensitivityRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.0005
+max_value = 0.008
+step = 0.0001
+
+[node name="FullscreenToggle" type="CheckButton" parent="CenterContainer/Panel/Content"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Fullscreen / browser display"
+
+[node name="WebHint" type="Label" parent="CenterContainer/Panel/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.54, 0.66, 0.69, 1)
+theme_override_font_sizes/font_size = 14
+text = "Fullscreen availability depends on browser permissions."
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="CenterContainer/Panel/Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 48)
+layout_mode = 2
+text = "BACK"
+size_flags_horizontal = 4

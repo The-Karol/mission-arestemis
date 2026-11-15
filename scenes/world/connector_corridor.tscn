@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/connector_corridor.gd" id="1"]
+
+[node name="ConnectorCorridor" type="Node3D"]
+position = Vector3(21, 0, 4)
+rotation = Vector3(0, 1.5708, 0)
+script = ExtResource("1")
+corridor_length = 14.0
+corridor_width = 5.0

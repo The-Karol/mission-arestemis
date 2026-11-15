@@ -1,0 +1,16 @@
+.godot/
+build/
+.claude/
+.codex/
+.agents/
+references/
+source_models/
+.env
+.env.*
+*.log
+*.tmp
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+export_credentials.cfg

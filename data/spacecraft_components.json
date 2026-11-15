@@ -1,0 +1,1591 @@
+[
+ {
+  "id": "A1.1",
+  "name": "Small Solar Array",
+  "family": "Common",
+  "category": "Power",
+  "model": "small_solar_array",
+  "mass_kg": 6.0,
+  "cost": 10,
+  "specs": {
+   "Power at 1 AU": "200 W - GAME",
+   "Mass": "~6 kg",
+   "Area": "~1.5-2 m^2",
+   "Cost tier": "1"
+  },
+  "load_w": 0,
+  "generation_w": 200.0,
+  "capabilities": []
+ },
+ {
+  "id": "A1.2",
+  "name": "Medium Solar Array",
+  "family": "Common",
+  "category": "Power",
+  "model": "medium_solar_array",
+  "mass_kg": 30.0,
+  "cost": 20,
+  "specs": {
+   "Power": "1,000 W",
+   "Mass": "~30 kg",
+   "Area": "~7-9 m^2",
+   "Cost tier": "2"
+  },
+  "load_w": 0,
+  "generation_w": 1000.0,
+  "capabilities": []
+ },
+ {
+  "id": "A1.3",
+  "name": "Large Solar Array",
+  "family": "Common",
+  "category": "Power",
+  "model": "large_solar_array",
+  "mass_kg": 150.0,
+  "cost": 30,
+  "specs": {
+   "Power": "5,000 W",
+   "Mass": "~150 kg",
+   "Area": "~35-45 m^2",
+   "Cost tier": "3"
+  },
+  "load_w": 0,
+  "generation_w": 5000.0,
+  "capabilities": []
+ },
+ {
+  "id": "A1.4",
+  "name": "Battery - 1 kWh",
+  "family": "Common",
+  "category": "Power",
+  "model": "battery_power_module",
+  "mass_kg": 6.6,
+  "cost": 10,
+  "specs": {
+   "Capacity": "1 kWh",
+   "Mass": "~6.6 kg",
+   "Basis": "~152.5 Wh/kg space Li-ion class",
+   "Max discharge": "~1 kW - GAME",
+   "Cost tier": "1"
+  },
+  "load_w": 0,
+  "battery_kwh": 1.0,
+  "capabilities": []
+ },
+ {
+  "id": "A1.5",
+  "name": "Battery - 5 kWh",
+  "family": "Common",
+  "category": "Power",
+  "model": "battery_power_module",
+  "mass_kg": 32.0,
+  "cost": 20,
+  "specs": {
+   "Capacity": "5 kWh",
+   "Mass": "~32 kg",
+   "Max discharge": "~4 kW",
+   "Cost tier": "2"
+  },
+  "load_w": 0,
+  "battery_kwh": 5.0,
+  "capabilities": []
+ },
+ {
+  "id": "A1.6",
+  "name": "Battery - 20 kWh",
+  "family": "Common",
+  "category": "Power",
+  "model": "battery_power_module",
+  "mass_kg": 125.0,
+  "cost": 30,
+  "specs": {
+   "Capacity": "20 kWh",
+   "Mass": "~125 kg",
+   "Max discharge": "~12 kW",
+   "Cost tier": "3"
+  },
+  "load_w": 0,
+  "battery_kwh": 20.0,
+  "capabilities": []
+ },
+ {
+  "id": "A1.7",
+  "name": "PCDU - 220 W",
+  "family": "Common",
+  "category": "Power",
+  "model": "battery_power_module",
+  "mass_kg": 0.56,
+  "cost": 10,
+  "specs": {
+   "Mass": "0.56 kg - REAL",
+   "Peak handled power": "220 W - REAL",
+   "Efficiency": "~85%",
+   "Cost tier": "1"
+  },
+  "load_w": 0,
+  "pcdu_w": 220.0,
+  "capabilities": []
+ },
+ {
+  "id": "A1.8",
+  "name": "PCDU - 1.5 kW",
+  "family": "Common",
+  "category": "Power",
+  "model": "battery_power_module",
+  "mass_kg": 2.9,
+  "cost": 20,
+  "specs": {
+   "Mass": "~2.9 kg",
+   "Peak output": "~1,500 W",
+   "Efficiency": "~95%",
+   "Cost tier": "2"
+  },
+  "load_w": 0,
+  "pcdu_w": 1500.0,
+  "capabilities": []
+ },
+ {
+  "id": "A1.9",
+  "name": "Heavy PCDU - 7.2 kW",
+  "family": "Common",
+  "category": "Power",
+  "model": "battery_power_module",
+  "mass_kg": 4.5,
+  "cost": 30,
+  "specs": {
+   "Mass": "~4.5 kg",
+   "Peak handled power": "~7,200 W",
+   "Efficiency": "~90%",
+   "Cost tier": "3"
+  },
+  "load_w": 0,
+  "pcdu_w": 7200.0,
+  "capabilities": []
+ },
+ {
+  "id": "A2.1",
+  "name": "Basic OBC",
+  "family": "Common",
+  "category": "Computing",
+  "model": "space_data_recorder",
+  "mass_kg": 0.3,
+  "cost": 10,
+  "specs": {
+   "Mass": "~0.3 kg - GAME",
+   "Power": "~0.3-1 W",
+   "Processing": "Low",
+   "Radiation tolerance": "Low/Medium",
+   "Cost tier": "1"
+  },
+  "load_w": 0.3,
+  "capabilities": []
+ },
+ {
+  "id": "A2.2",
+  "name": "Rad-Hard OBC",
+  "family": "Common",
+  "category": "Computing",
+  "model": "space_data_recorder",
+  "mass_kg": 2.5,
+  "cost": 30,
+  "specs": {
+   "Mass": "~2.5 kg - ESTIMATED/GAME",
+   "Power": "~12 W - REAL-class",
+   "Radiation tolerance": "High",
+   "Processing": "Medium",
+   "Cost tier": "3"
+  },
+  "load_w": 12.0,
+  "capabilities": [
+   "AUTONOMY"
+  ]
+ },
+ {
+  "id": "A2.3",
+  "name": "High-Performance / AI OBC",
+  "family": "Common",
+  "category": "Computing",
+  "model": "space_data_recorder",
+  "mass_kg": 3.0,
+  "cost": 40,
+  "specs": {
+   "Mass": "~3 kg - GAME",
+   "Power": "~35 W",
+   "Processing": "Very High",
+   "Radiation tolerance": "Medium/High",
+   "Enables": "onboard image processing / autonomy",
+   "Cost tier": "4"
+  },
+  "load_w": 35.0,
+  "capabilities": [
+   "AUTONOMY"
+  ]
+ },
+ {
+  "id": "A3.1",
+  "name": "Sun Sensor",
+  "family": "Common",
+  "category": "Navigation",
+  "model": "docking_sensor",
+  "mass_kg": 0.003,
+  "cost": 10,
+  "specs": {
+   "Mass": "~0.003 kg - REAL-class",
+   "Power": "~0.04 W",
+   "Accuracy": "~1 deg",
+   "Cost tier": "1"
+  },
+  "load_w": 0.04,
+  "capabilities": []
+ },
+ {
+  "id": "A3.2",
+  "name": "Star Tracker - Sagitta-class",
+  "family": "Common",
+  "category": "Navigation",
+  "model": "telescope_guidance_sensor",
+  "mass_kg": 0.275,
+  "cost": 30,
+  "specs": {
+   "Mass": "0.275 kg - REAL",
+   "Power": "1.4 W",
+   "Cross-axis accuracy": "~6 arcsec",
+   "Cost tier": "3"
+  },
+  "load_w": 1.4,
+  "capabilities": [
+   "POINTING"
+  ]
+ },
+ {
+  "id": "A3.3",
+  "name": "Small Reaction Wheel",
+  "family": "Common",
+  "category": "Navigation",
+  "model": "reaction_wheel",
+  "mass_kg": 0.235,
+  "cost": 20,
+  "specs": {
+   "Mass": "~0.235 kg - REAL-class",
+   "Peak power": "~23 W",
+   "Peak torque": "~0.02 N / m",
+   "Momentum capacity": "~0.18 N / m / s",
+   "Cost tier": "2"
+  },
+  "load_w": 23.0,
+  "capabilities": [
+   "ATTITUDE"
+  ]
+ },
+ {
+  "id": "A3.4",
+  "name": "Heavy Reaction Wheel",
+  "family": "Common",
+  "category": "Navigation",
+  "model": "reaction_wheel",
+  "mass_kg": 2.75,
+  "cost": 30,
+  "specs": {
+   "Mass": "~2.75 kg",
+   "Peak power": "~100 W",
+   "Peak torque": "~0.1 N / m",
+   "Momentum": "~4 N / m / s",
+   "Cost tier": "3"
+  },
+  "load_w": 100.0,
+  "capabilities": [
+   "ATTITUDE"
+  ]
+ },
+ {
+  "id": "A3.5",
+  "name": "Spacecraft IMU",
+  "family": "Common",
+  "category": "Navigation",
+  "model": "docking_sensor",
+  "mass_kg": 0.2,
+  "cost": 10,
+  "specs": {
+   "Mass": "~0.2 kg - GAME",
+   "Power": "~2 W",
+   "Accuracy": "Medium",
+   "Cost tier": "1"
+  },
+  "load_w": 2.0,
+  "capabilities": []
+ },
+ {
+  "id": "A3.6",
+  "name": "GNSS Navigation Receiver",
+  "family": "Common",
+  "category": "Navigation",
+  "model": "docking_sensor",
+  "mass_kg": 0.39,
+  "cost": 10,
+  "specs": {
+   "Mass": "~0.39 kg",
+   "Power": "~2.4 W",
+   "Accuracy near Earth": "~1.5 m RMS",
+   "Cost tier": "1",
+   "Limitation": "Not suitable as the primary deep-space navigation source"
+  },
+  "load_w": 2.4,
+  "capabilities": [
+   "ORBIT_FIX"
+  ]
+ },
+ {
+  "id": "A4.1",
+  "name": "UHF Radio",
+  "family": "Common",
+  "category": "Communications",
+  "model": "small_low_gain_antenna",
+  "mass_kg": 0.078,
+  "cost": 10,
+  "specs": {
+   "Mass": "0.078 kg - REAL",
+   "RF Tx": "up to 3 W",
+   "Data rate": "up to 38.4 kbps",
+   "Electrical load": "~5 W - GAME",
+   "Cost tier": "1"
+  },
+  "load_w": 5.0,
+  "capabilities": [
+   "COMM"
+  ]
+ },
+ {
+  "id": "A4.2",
+  "name": "S-band Radio",
+  "family": "Common",
+  "category": "Communications",
+  "model": "small_low_gain_antenna",
+  "mass_kg": 0.575,
+  "cost": 20,
+  "specs": {
+   "Mass": "~0.575 kg",
+   "Data rate": "~1.84 Mbps",
+   "RF Tx": "~0.8 W",
+   "Electrical load": "~8 W - GAME",
+   "Cost tier": "2"
+  },
+  "load_w": 8.0,
+  "capabilities": [
+   "COMM"
+  ]
+ },
+ {
+  "id": "A4.3",
+  "name": "X-band SDR",
+  "family": "Common",
+  "category": "Communications",
+  "model": "medium_high_gain_antenna",
+  "mass_kg": 0.555,
+  "cost": 30,
+  "specs": {
+   "Mass": "~0.555 kg",
+   "Data rate": "up to ~206 Mbps",
+   "RF output": "~0.8 W",
+   "Electrical load": "~15-25 W - GAME",
+   "Cost tier": "3"
+  },
+  "load_w": 15.0,
+  "capabilities": [
+   "COMM",
+   "DOWNLINK"
+  ]
+ },
+ {
+  "id": "A4.4",
+  "name": "Deep Space Transponder - IRIS V2.1",
+  "family": "Common",
+  "category": "Communications",
+  "model": "deep_space_dish",
+  "mass_kg": 1.1,
+  "cost": 40,
+  "specs": {
+   "Mass": "1.1 kg - REAL",
+   "Receive power": "10.3 W",
+   "Bands": "X / Ka / S / UHF",
+   "Tx operating power": "~20-35 W - GAME",
+   "Cost tier": "4"
+  },
+  "load_w": 20.0,
+  "capabilities": [
+   "COMM",
+   "DEEP_RADIO",
+   "DOWNLINK"
+  ]
+ },
+ {
+  "id": "A4.5",
+  "name": "High-Gain Antenna - Small",
+  "family": "Common",
+  "category": "Communications",
+  "model": "small_low_gain_antenna",
+  "mass_kg": 2.0,
+  "cost": 20,
+  "specs": {
+   "Mass": "2 kg - GAME",
+   "Gain": "~18 dBi",
+   "Diameter": "~0.4 m",
+   "Pointing requirement": "Medium",
+   "Cost tier": "2"
+  },
+  "load_w": 0,
+  "capabilities": [
+   "ANTENNA"
+  ]
+ },
+ {
+  "id": "A4.6",
+  "name": "High-Gain Antenna - Medium",
+  "family": "Common",
+  "category": "Communications",
+  "model": "medium_high_gain_antenna",
+  "mass_kg": 8.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "8 kg",
+   "Gain": "~28 dBi",
+   "Diameter": "~1 m",
+   "Pointing requirement": "High",
+   "Cost tier": "3"
+  },
+  "load_w": 0,
+  "capabilities": [
+   "ANTENNA"
+  ]
+ },
+ {
+  "id": "A4.7",
+  "name": "High-Gain Antenna - Deep Space",
+  "family": "Common",
+  "category": "Communications",
+  "model": "deep_space_dish",
+  "mass_kg": 25.0,
+  "cost": 40,
+  "specs": {
+   "Mass": "~25 kg",
+   "Gain": "~35-40 dBi",
+   "Diameter": "~2 m",
+   "Pointing requirement": "Very High",
+   "Cost tier": "4"
+  },
+  "load_w": 0,
+  "capabilities": [
+   "ANTENNA"
+  ]
+ },
+ {
+  "id": "A5.1",
+  "name": "Cold Gas RCS - NanoProp 6U class",
+  "family": "Common",
+  "category": "Propulsion",
+  "model": "cargo_rcs_block",
+  "mass_kg": 0.9,
+  "cost": 10,
+  "specs": {
+   "Wet mass": "0.9 kg - REAL",
+   "Thrusters": "4",
+   "Thrust": "0.1-10 mN each",
+   "Isp": "60-110 s",
+   "Power": "<2 W",
+   "Cost tier": "1"
+  },
+  "load_w": 2.0,
+  "capabilities": [
+   "PROPULSION"
+  ]
+ },
+ {
+  "id": "A5.2",
+  "name": "Hydrazine 1 N Thruster - MR-103 class",
+  "family": "Common",
+  "category": "Propulsion",
+  "model": "cargo_rcs_block",
+  "mass_kg": 0.35,
+  "cost": 20,
+  "specs": {
+   "Mass": "~0.35 kg",
+   "Thrust": "1 N",
+   "Isp": "~202-224 s",
+   "Valve power": "<16 W",
+   "Cost tier": "2"
+  },
+  "load_w": 16.0,
+  "capabilities": [
+   "PROPULSION"
+  ]
+ },
+ {
+  "id": "A5.3",
+  "name": "Hydrazine 22 N Thruster - MR-106 class",
+  "family": "Common",
+  "category": "Propulsion",
+  "model": "cargo_rcs_block",
+  "mass_kg": 0.59,
+  "cost": 20,
+  "specs": {
+   "Mass": "~0.59 kg",
+   "Thrust": "22 N",
+   "Isp": "228-235 s",
+   "Valve power": "<36 W",
+   "Cost tier": "2"
+  },
+  "load_w": 36.0,
+  "capabilities": [
+   "PROPULSION"
+  ]
+ },
+ {
+  "id": "A5.4",
+  "name": "Hall Thruster - BHT-200 class",
+  "family": "Common",
+  "category": "Propulsion",
+  "model": "hall_thruster",
+  "mass_kg": 1.2,
+  "cost": 30,
+  "specs": {
+   "Thruster mass": "~1.2 kg",
+   "Thrust": "~13 mN",
+   "Isp": "~1,390 s",
+   "Power": "~250 W",
+   "Propellant": "xenon",
+   "Cost tier": "3"
+  },
+  "load_w": 250.0,
+  "capabilities": [
+   "PROPULSION"
+  ]
+ },
+ {
+  "id": "A5.5",
+  "name": "Ion Engine - BIT-3",
+  "family": "Common",
+  "category": "Propulsion",
+  "model": "hall_thruster",
+  "mass_kg": 2.9,
+  "cost": 30,
+  "specs": {
+   "Wet mass": "~2.9 kg",
+   "Thrust": "~1 mN",
+   "Isp": "~1,960 s",
+   "Power": "~70 W",
+   "Propellant": "iodine",
+   "Cost tier": "3"
+  },
+  "load_w": 70.0,
+  "capabilities": [
+   "PROPULSION"
+  ]
+ },
+ {
+  "id": "B1.1",
+  "name": "Multispectral Earth Imager - Standard",
+  "family": "Satellite",
+  "category": "Science",
+  "model": "satellite_earth_imager",
+  "mass_kg": 120.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~120 kg - GAME",
+   "Power": "~180 W",
+   "Visible/NIR/SWIR bands": "8-10",
+   "Ground resolution": "~30 m",
+   "Data generation": "~60 GB/day",
+   "Science value": "70",
+   "Cost tier": "3"
+  },
+  "load_w": 180.0,
+  "capabilities": [
+   "IMAGING"
+  ]
+ },
+ {
+  "id": "B1.2",
+  "name": "High-Resolution Earth Camera",
+  "family": "Satellite",
+  "category": "Science",
+  "model": "satellite_earth_imager",
+  "mass_kg": 180.0,
+  "cost": 40,
+  "specs": {
+   "Mass": "~180 kg - GAME",
+   "Power": "~300 W",
+   "Resolution": "~3-5 m",
+   "Data generation": "~200 GB/day",
+   "Science value": "85",
+   "Pointing requirement": "Very High",
+   "Cost tier": "4"
+  },
+  "load_w": 300.0,
+  "capabilities": [
+   "IMAGING"
+  ]
+ },
+ {
+  "id": "B2.1",
+  "name": "Atmospheric Spectrometer",
+  "family": "Satellite",
+  "category": "Science",
+  "model": "satellite_atmospheric_spectrometer",
+  "mass_kg": 90.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~90 kg - GAME",
+   "Power": "~140 W",
+   "Measures": "O₃ / CO2 / CH₄ / H2O spectral signatures",
+   "Data": "~25 GB/day",
+   "Science value": "80",
+   "Cost tier": "3"
+  },
+  "load_w": 140.0,
+  "capabilities": [
+   "ATMOSPHERIC_SPECTRA"
+  ]
+ },
+ {
+  "id": "B2.2",
+  "name": "Thermal Infrared Radiometer",
+  "family": "Satellite",
+  "category": "Science",
+  "model": "telescope_near_ir_module",
+  "mass_kg": 70.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~70 kg - GAME",
+   "Power": "~180 W",
+   "Thermal bands": "2-4",
+   "Data": "~20 GB/day",
+   "Science value": "70",
+   "Cost tier": "3"
+  },
+  "load_w": 180.0,
+  "capabilities": [
+   "THERMAL"
+  ]
+ },
+ {
+  "id": "B3.1",
+  "name": "Space Atomic Clock - Standard",
+  "family": "Satellite",
+  "category": "Science",
+  "model": "space_data_recorder",
+  "mass_kg": 0.45,
+  "cost": 30,
+  "specs": {
+   "Mass": "~0.45 kg - REAL-class",
+   "Power": "~12 W max",
+   "Timing stability": "High",
+   "Cost tier": "3"
+  },
+  "load_w": 12.0,
+  "capabilities": [
+   "CLOCK"
+  ]
+ },
+ {
+  "id": "B3.2",
+  "name": "Precision Atomic Clock - Advanced",
+  "family": "Satellite",
+  "category": "Science",
+  "model": "space_data_recorder",
+  "mass_kg": 2.5,
+  "cost": 40,
+  "specs": {
+   "Mass": "~2.5 kg - GAME",
+   "Power": "~35 W",
+   "Timing stability": "Very High",
+   "Navigation accuracy bonus": "+++",
+   "Cost tier": "4"
+  },
+  "load_w": 35.0,
+  "capabilities": [
+   "CLOCK"
+  ]
+ },
+ {
+  "id": "B3.3",
+  "name": "L-band Navigation Transmitter",
+  "family": "Satellite",
+  "category": "Science",
+  "model": "medium_high_gain_antenna",
+  "mass_kg": 8.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~8 kg - GAME",
+   "Power": "~120 W",
+   "RF output": "~40-60 W",
+   "Cost tier": "3"
+  },
+  "load_w": 120.0,
+  "capabilities": [
+   "NAV_BROADCAST"
+  ]
+ },
+ {
+  "id": "B3.4",
+  "name": "Navigation Antenna Array",
+  "family": "Satellite",
+  "category": "Science",
+  "model": "satellite_navigation_array",
+  "mass_kg": 12.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~12 kg",
+   "Power": "~15 W",
+   "Beam coverage": "Wide Earth-facing",
+   "Cost tier": "3"
+  },
+  "load_w": 15.0,
+  "capabilities": [
+   "NAV_ARRAY"
+  ]
+ },
+ {
+  "id": "C1.1",
+  "name": "Small Refueling Tank Module",
+  "family": "Automated Cargo Spacecraft",
+  "category": "Cargo",
+  "model": "fuel_module_small",
+  "mass_kg": 70.0,
+  "cost": 10,
+  "specs": {
+   "Useful propellant": "300 kg - GAME",
+   "Dry mass": "~70 kg",
+   "Transfer losses": "~1%",
+   "Cost tier": "1"
+  },
+  "load_w": 0,
+  "cargo_kg": 300.0,
+  "capabilities": []
+ },
+ {
+  "id": "C1.2",
+  "name": "Medium Refueling Tank Module",
+  "family": "Automated Cargo Spacecraft",
+  "category": "Cargo",
+  "model": "fuel_module_medium",
+  "mass_kg": 170.0,
+  "cost": 20,
+  "specs": {
+   "Useful propellant": "850 kg",
+   "Dry mass": "~170 kg",
+   "Reference": "Progress-class",
+   "Cost tier": "2"
+  },
+  "load_w": 0,
+  "cargo_kg": 850.0,
+  "capabilities": []
+ },
+ {
+  "id": "C1.3",
+  "name": "Heavy Refueling Tank Module",
+  "family": "Automated Cargo Spacecraft",
+  "category": "Cargo",
+  "model": "fuel_module_large",
+  "mass_kg": 320.0,
+  "cost": 30,
+  "specs": {
+   "Useful propellant": "1,700 kg - REAL Progress M1-class capacity",
+   "Dry mass": "~320 kg - GAME",
+   "Cost tier": "3"
+  },
+  "load_w": 0,
+  "cargo_kg": 1700.0,
+  "capabilities": []
+ },
+ {
+  "id": "C2.1",
+  "name": "Docking Camera Suite",
+  "family": "Automated Cargo Spacecraft",
+  "category": "Docking",
+  "model": "docking_sensor",
+  "mass_kg": 4.0,
+  "cost": 20,
+  "specs": {
+   "Mass": "~4 kg - GAME",
+   "Power": "~25 W",
+   "Range": "visual tracking to ~10 km",
+   "Accuracy near docking": "~0.2 m",
+   "Cost tier": "2"
+  },
+  "load_w": 25.0,
+  "capabilities": [
+   "DOCKING_SENSORS"
+  ]
+ },
+ {
+  "id": "C2.2",
+  "name": "Rendezvous LiDAR",
+  "family": "Automated Cargo Spacecraft",
+  "category": "Docking",
+  "model": "docking_sensor",
+  "mass_kg": 8.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~8 kg - GAME",
+   "Power": "~45 W",
+   "Range": "~5 km",
+   "Range precision": "cm-class near target",
+   "Cost tier": "3"
+  },
+  "load_w": 45.0,
+  "capabilities": [
+   "DOCKING_SENSORS"
+  ]
+ },
+ {
+  "id": "C2.3",
+  "name": "Rendezvous Radar",
+  "family": "Automated Cargo Spacecraft",
+  "category": "Docking",
+  "model": "docking_sensor",
+  "mass_kg": 15.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~15 kg",
+   "Power": "~120 W",
+   "Long-range relative navigation": "tens of km",
+   "Cost tier": "3"
+  },
+  "load_w": 120.0,
+  "capabilities": [
+   "DOCKING_SENSORS"
+  ]
+ },
+ {
+  "id": "C2.4",
+  "name": "Automatic Docking Computer",
+  "family": "Automated Cargo Spacecraft",
+  "category": "Docking",
+  "model": "space_data_recorder",
+  "mass_kg": 6.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~6 kg",
+   "Power": "~35 W",
+   "Requires": "camera/LiDAR/radar input",
+   "Cost tier": "3"
+  },
+  "load_w": 35.0,
+  "capabilities": [
+   "AUTONOMY",
+   "DOCKING_COMPUTER"
+  ]
+ },
+ {
+  "id": "C3.1",
+  "name": "Standard Cargo Propulsion Package",
+  "family": "Automated Cargo Spacecraft",
+  "category": "Propulsion",
+  "model": "cargo_rcs_block",
+  "mass_kg": 90.0,
+  "cost": 20,
+  "specs": {
+   "Main engine": "~500 N - GAME",
+   "RCS": "16 x 20 N",
+   "Isp": "~220 s",
+   "Dry mass": "~90 kg",
+   "Propellant tank capacity": "~800 kg",
+   "Cost tier": "2"
+  },
+  "load_w": 0,
+  "maneuver_kg": 800.0,
+  "capabilities": [
+   "PROPULSION",
+   "CARGO_ENGINE"
+  ]
+ },
+ {
+  "id": "C3.2",
+  "name": "Heavy Cargo Propulsion Package",
+  "family": "Automated Cargo Spacecraft",
+  "category": "Propulsion",
+  "model": "cargo_rcs_block",
+  "mass_kg": 180.0,
+  "cost": 30,
+  "specs": {
+   "Main thrust": "~3,000 N",
+   "Isp": "~230 s",
+   "Dry mass": "~180 kg",
+   "Propellant capacity": "~1,500 kg",
+   "Cost tier": "3"
+  },
+  "load_w": 0,
+  "maneuver_kg": 1500.0,
+  "capabilities": [
+   "PROPULSION",
+   "CARGO_ENGINE"
+  ]
+ },
+ {
+  "id": "D1.1",
+  "name": "Navigation / Mapping Camera",
+  "family": "Interplanetary Probe",
+  "category": "Science",
+  "model": "probe_mapping_camera",
+  "mass_kg": 4.0,
+  "cost": 10,
+  "specs": {
+   "Mass": "~4 kg - GAME",
+   "Power": "~12 W",
+   "Resolution": "Medium",
+   "Data": "~2 GB/day",
+   "Science value": "35",
+   "Navigation bonus": "++",
+   "Cost tier": "1"
+  },
+  "load_w": 12.0,
+  "capabilities": [
+   "IMAGING"
+  ]
+ },
+ {
+  "id": "D1.2",
+  "name": "Long-Range High-Resolution Camera",
+  "family": "Interplanetary Probe",
+  "category": "Science",
+  "model": "probe_long_range_camera",
+  "mass_kg": 12.0,
+  "cost": 20,
+  "specs": {
+   "Mass": "~12 kg",
+   "Power": "~35 W",
+   "Resolution": "High",
+   "Data": "~10 GB/day",
+   "Science value": "65",
+   "Pointing requirement": "High",
+   "Cost tier": "2"
+  },
+  "load_w": 35.0,
+  "capabilities": [
+   "IMAGING"
+  ]
+ },
+ {
+  "id": "D2.1",
+  "name": "Visible + Near-IR Spectrometer",
+  "family": "Interplanetary Probe",
+  "category": "Science",
+  "model": "probe_spectrometer",
+  "mass_kg": 15.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~15 kg - GAME",
+   "Power": "~35 W",
+   "Wavelength": "~0.4-4.3 um",
+   "Detects": "minerals / organics",
+   "Science value": "80",
+   "Cost tier": "3"
+  },
+  "load_w": 35.0,
+  "capabilities": [
+   "MINERAL",
+   "SPECTRA",
+   "COMPOSITION"
+  ]
+ },
+ {
+  "id": "D2.2",
+  "name": "Thermal Emission Spectrometer",
+  "family": "Interplanetary Probe",
+  "category": "Science",
+  "model": "probe_spectrometer",
+  "mass_kg": 10.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~10 kg",
+   "Power": "~25 W",
+   "Measures": "temperature + mineral signatures",
+   "Science value": "70",
+   "Cost tier": "3"
+  },
+  "load_w": 25.0,
+  "capabilities": [
+   "MINERAL",
+   "SPECTRA",
+   "COMPOSITION"
+  ]
+ },
+ {
+  "id": "D2.3",
+  "name": "X-ray Spectrometer",
+  "family": "Interplanetary Probe",
+  "category": "Science",
+  "model": "rover_xray_sensor",
+  "mass_kg": 7.0,
+  "cost": 20,
+  "specs": {
+   "Mass": "~7 kg",
+   "Power": "~15 W",
+   "Measures": "elemental composition",
+   "Science value": "60",
+   "Cost tier": "2"
+  },
+  "load_w": 15.0,
+  "capabilities": [
+   "ELEMENTAL",
+   "SPECTRA",
+   "COMPOSITION"
+  ]
+ },
+ {
+  "id": "D3",
+  "name": "Laser Altimeter",
+  "family": "Interplanetary Probe",
+  "category": "Science",
+  "model": "probe_laser_altimeter",
+  "mass_kg": 12.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~12 kg - GAME",
+   "Power": "~40 W",
+   "Mapping range": "~7 km class",
+   "Produces": "3D topography",
+   "Science value": "50",
+   "Cost tier": "3"
+  },
+  "load_w": 40.0,
+  "capabilities": []
+ },
+ {
+  "id": "D4",
+  "name": "Dust Analyzer",
+  "family": "Interplanetary Probe",
+  "category": "Science",
+  "model": "probe_dust_analyzer",
+  "mass_kg": 8.0,
+  "cost": 20,
+  "specs": {
+   "Mass": "~8 kg - GAME",
+   "Power": "~18 W",
+   "Measures": "particle flux / impact energy",
+   "Useful for": "comet",
+   "Science value": "55",
+   "Cost tier": "2"
+  },
+  "load_w": 18.0,
+  "capabilities": [
+   "DUST"
+  ]
+ },
+ {
+  "id": "D5",
+  "name": "Magnetometer + Boom",
+  "family": "Interplanetary Probe",
+  "category": "Science",
+  "model": "probe_magnetometer_boom",
+  "mass_kg": 3.0,
+  "cost": 20,
+  "specs": {
+   "Sensor mass": "~0.1 kg class",
+   "Boom + harness": "~3 kg - GAME",
+   "Power": "~2 W",
+   "Science value": "45",
+   "Cost tier": "2"
+  },
+  "load_w": 2.0,
+  "capabilities": []
+ },
+ {
+  "id": "E1",
+  "name": "Visible Wide-Field Camera",
+  "family": "Space Telescope",
+  "category": "Science",
+  "model": "telescope_wide_field_camera",
+  "mass_kg": 80.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~80 kg - GAME",
+   "Power": "~120 W",
+   "Field of view": "Wide",
+   "Data": "~150 GB/day",
+   "Best for": "galaxies / survey",
+   "Science value": "75",
+   "Cost tier": "3"
+  },
+  "load_w": 120.0,
+  "capabilities": [
+   "WIDE_FIELD"
+  ]
+ },
+ {
+  "id": "E2",
+  "name": "Near-IR Camera",
+  "family": "Space Telescope",
+  "category": "Science",
+  "model": "telescope_near_ir_module",
+  "mass_kg": 95.0,
+  "cost": 40,
+  "specs": {
+   "Mass": "~95 kg",
+   "Power": "~160 W",
+   "Wavelength": "~0.6-5 um class",
+   "Best for": "high-redshift galaxies / exoplanets",
+   "Data": "~120 GB/day",
+   "Science value": "85",
+   "Cost tier": "4"
+  },
+  "load_w": 160.0,
+  "capabilities": [
+   "NEAR_IR"
+  ]
+ },
+ {
+  "id": "E3",
+  "name": "Mid-IR Detector Package",
+  "family": "Space Telescope",
+  "category": "Science",
+  "model": "telescope_near_ir_module",
+  "mass_kg": 120.0,
+  "cost": 50,
+  "specs": {
+   "Mass": "~120 kg",
+   "Power": "~250 W",
+   "Requires": "cryocooler",
+   "Wavelength": "~5-28 um class",
+   "Science value": "90",
+   "Cost tier": "5"
+  },
+  "load_w": 250.0,
+  "capabilities": []
+ },
+ {
+  "id": "E4",
+  "name": "Multi-Object Spectrograph",
+  "family": "Space Telescope",
+  "category": "Science",
+  "model": "telescope_spectrograph",
+  "mass_kg": 110.0,
+  "cost": 50,
+  "specs": {
+   "Mass": "~110 kg - GAME",
+   "Power": "~180 W",
+   "Best for": "galaxy evolution",
+   "Science value": "95",
+   "Data": "~100 GB/day",
+   "Cost tier": "5"
+  },
+  "load_w": 180.0,
+  "capabilities": [
+   "SPECTRA"
+  ]
+ },
+ {
+  "id": "E5",
+  "name": "Exoplanet Spectrograph",
+  "family": "Space Telescope",
+  "category": "Science",
+  "model": "telescope_spectrograph",
+  "mass_kg": 70.0,
+  "cost": 50,
+  "specs": {
+   "Mass": "~70 kg",
+   "Power": "~110 W",
+   "Measures": "atmospheric spectral features",
+   "Best for": "H2O / CO2 / CH₄-like signatures",
+   "Science value": "95",
+   "Cost tier": "5"
+  },
+  "load_w": 110.0,
+  "capabilities": [
+   "SPECTRA"
+  ]
+ },
+ {
+  "id": "E6",
+  "name": "Coronagraph",
+  "family": "Space Telescope",
+  "category": "Science",
+  "model": "telescope_coronagraph",
+  "mass_kg": 150.0,
+  "cost": 50,
+  "specs": {
+   "Mass": "~150 kg - GAME",
+   "Power": "~350 W",
+   "Function": "blocks starlight to reveal faint planets/disks",
+   "Requires": "Very High pointing accuracy",
+   "Science value": "100",
+   "Cost tier": "5"
+  },
+  "load_w": 350.0,
+  "capabilities": [
+   "CORONAGRAPHY"
+  ]
+ },
+ {
+  "id": "E7",
+  "name": "Fine Guidance Sensor",
+  "family": "Space Telescope",
+  "category": "Navigation",
+  "model": "telescope_guidance_sensor",
+  "mass_kg": 25.0,
+  "cost": 40,
+  "specs": {
+   "Mass": "~25 kg - GAME",
+   "Power": "~35 W",
+   "Pointing precision bonus": "+++++",
+   "Cost tier": "4"
+  },
+  "load_w": 35.0,
+  "capabilities": [
+   "FINE_GUIDANCE"
+  ]
+ },
+ {
+  "id": "E8",
+  "name": "Cryocooler",
+  "family": "Space Telescope",
+  "category": "Thermal",
+  "model": "telescope_cryocooler",
+  "mass_kg": 35.0,
+  "cost": 40,
+  "specs": {
+   "Mass": "~35 kg - GAME",
+   "Power": "~250 W",
+   "Required by": "Mid-IR detector package",
+   "Cost tier": "4"
+  },
+  "load_w": 250.0,
+  "capabilities": []
+ },
+ {
+  "id": "E9",
+  "name": "Standard Science Data Recorder",
+  "family": "Space Telescope",
+  "category": "Storage",
+  "model": "space_data_recorder",
+  "mass_kg": 8.0,
+  "cost": 20,
+  "specs": {
+   "Storage": "4 TB",
+   "Mass": "~8 kg - GAME",
+   "Power": "~20 W",
+   "Cost tier": "2"
+  },
+  "load_w": 20.0,
+  "storage_tb": 4.0,
+  "capabilities": [
+   "STORAGE"
+  ]
+ },
+ {
+  "id": "E10",
+  "name": "Advanced Science Data Recorder",
+  "family": "Space Telescope",
+  "category": "Storage",
+  "model": "space_data_recorder",
+  "mass_kg": 18.0,
+  "cost": 30,
+  "specs": {
+   "Storage": "16 TB",
+   "Mass": "~18 kg",
+   "Power": "~45 W",
+   "Cost tier": "3"
+  },
+  "load_w": 45.0,
+  "storage_tb": 16.0,
+  "capabilities": [
+   "STORAGE"
+  ]
+ },
+ {
+  "id": "F1.1",
+  "name": "PIXL-like X-ray Spectrometer",
+  "family": "Rover",
+  "category": "Science",
+  "model": "rover_xray_sensor",
+  "mass_kg": 6.9,
+  "cost": 40,
+  "specs": {
+   "Sensor head": "4.3 kg - REAL",
+   "Electronics": "2.6 kg - REAL",
+   "Total gameplay mass": "~6.9 kg",
+   "Power": "~25 W",
+   "Data": "~16 Mbit / experiment",
+   "Measures": "elemental chemistry",
+   "Science value": "90",
+   "Cost tier": "4"
+  },
+  "load_w": 25.0,
+  "capabilities": [
+   "ELEMENTAL"
+  ]
+ },
+ {
+  "id": "F1.2",
+  "name": "SHERLOC-like Raman/UV Spectrometer",
+  "family": "Rover",
+  "category": "Science",
+  "model": "rover_uv_spectrometer",
+  "mass_kg": 4.7,
+  "cost": 40,
+  "specs": {
+   "Turret module": "~3.11 kg - REAL",
+   "Body electronics": "~1.61 kg - REAL",
+   "Total": "~4.7 kg",
+   "Power": "~48.8 W combined peak class - REAL-derived",
+   "Detects": "minerals + organics",
+   "Science value": "95",
+   "Cost tier": "4"
+  },
+  "load_w": 48.8,
+  "capabilities": [
+   "MINERAL"
+  ]
+ },
+ {
+  "id": "F1.3",
+  "name": "SuperCam-like Remote Geology Package",
+  "family": "Rover",
+  "category": "Science",
+  "model": "rover_mast_laser_camera",
+  "mass_kg": 10.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~10 kg - GAME",
+   "Power": "~18 W avg / 40 W peak",
+   "Function": "imaging + laser spectroscopy",
+   "Science value": "80",
+   "Cost tier": "3"
+  },
+  "load_w": 18.0,
+  "capabilities": [
+   "MINERAL",
+   "IMAGING"
+  ]
+ },
+ {
+  "id": "F1.4",
+  "name": "Mast Zoom Camera",
+  "family": "Rover",
+  "category": "Science",
+  "model": "rover_mast_laser_camera",
+  "mass_kg": 4.0,
+  "cost": 20,
+  "specs": {
+   "Mass": "~4 kg - GAME",
+   "Power": "~12 W",
+   "Science value": "50",
+   "Cost tier": "2"
+  },
+  "load_w": 12.0,
+  "capabilities": [
+   "IMAGING"
+  ]
+ },
+ {
+  "id": "F1.5",
+  "name": "Ground-Penetrating Radar - Mars",
+  "family": "Rover",
+  "category": "Science",
+  "model": "rover_ground_radar",
+  "mass_kg": 3.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~3 kg - GAME",
+   "Power": "~8-15 W",
+   "Detects": "subsurface layering",
+   "Science value": "80",
+   "Cost tier": "3"
+  },
+  "load_w": 8.0,
+  "capabilities": []
+ },
+ {
+  "id": "F1.6",
+  "name": "Rotary-Percussive Drill",
+  "family": "Rover",
+  "category": "Science",
+  "model": "rover_coring_drill",
+  "mass_kg": 15.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~15 kg - GAME",
+   "Peak power": "~150 W",
+   "Core/sample depth": "~5-7 cm class",
+   "Science value": "70",
+   "Cost tier": "3"
+  },
+  "load_w": 150.0,
+  "capabilities": [
+   "DRILL"
+  ]
+ },
+ {
+  "id": "F1.7",
+  "name": "Sample Storage Module",
+  "family": "Rover",
+  "category": "Science",
+  "model": "rover_sample_storage",
+  "mass_kg": 12.0,
+  "cost": 20,
+  "specs": {
+   "Empty mass": "~12 kg",
+   "Capacity": "20 sample tubes",
+   "Sample mass capacity": "~4 kg",
+   "Power": "~10 W",
+   "Cost tier": "2"
+  },
+  "load_w": 10.0,
+  "capabilities": []
+ },
+ {
+  "id": "F2.1",
+  "name": "Neutron Spectrometer",
+  "family": "Rover",
+  "category": "Science",
+  "model": "lunar_neutron_spectrometer",
+  "mass_kg": 0.7,
+  "cost": 20,
+  "specs": {
+   "Mass": "~0.7 kg - REAL concept value",
+   "Power": "~2.3 W",
+   "Detects": "hydrogen-rich regolith",
+   "Science value": "85",
+   "Cost tier": "2"
+  },
+  "load_w": 2.3,
+  "capabilities": [
+   "HYDROGEN"
+  ]
+ },
+ {
+  "id": "F2.2",
+  "name": "Near-IR Volatile Spectrometer",
+  "family": "Rover",
+  "category": "Science",
+  "model": "lunar_volatile_spectrometer",
+  "mass_kg": 4.0,
+  "cost": 30,
+  "specs": {
+   "Mass": "~4 kg - GAME",
+   "Power": "~15 W",
+   "Detects": "water/volatile spectral signatures",
+   "Science value": "85",
+   "Cost tier": "3"
+  },
+  "load_w": 15.0,
+  "capabilities": [
+   "VOLATILES"
+  ]
+ },
+ {
+  "id": "F2.3",
+  "name": "Lunar Drill / Sample Acquisition",
+  "family": "Rover",
+  "category": "Science",
+  "model": "lunar_sample_drill",
+  "mass_kg": 41.6,
+  "cost": 40,
+  "specs": {
+   "Mass": "~41.6 kg - REAL concept value",
+   "Power": "~98 W",
+   "Science value": "90",
+   "Cost tier": "4"
+  },
+  "load_w": 98.0,
+  "capabilities": [
+   "DRILL"
+  ]
+ },
+ {
+  "id": "F2.4",
+  "name": "Gas Chromatograph / Mass Spectrometer",
+  "family": "Rover",
+  "category": "Science",
+  "model": "lunar_gcms",
+  "mass_kg": 13.0,
+  "cost": 50,
+  "specs": {
+   "Mass": "~13 kg - REAL concept value",
+   "Average power": "~10.4 W",
+   "Peak power": "~47 W",
+   "Function": "identify volatile species",
+   "Science value": "100",
+   "Cost tier": "5"
+  },
+  "load_w": 10.4,
+  "capabilities": [
+   "VOLATILES"
+  ]
+ },
+ {
+  "id": "F2.5",
+  "name": "Ground-Penetrating Radar - Lunar",
+  "family": "Rover",
+  "category": "Science",
+  "model": "lunar_penetrating_radar",
+  "mass_kg": 3.5,
+  "cost": 30,
+  "specs": {
+   "Mass": "~3.5 kg - REAL concept value",
+   "Power": "~8 W",
+   "Science value": "70",
+   "Cost tier": "3"
+  },
+  "load_w": 8.0,
+  "capabilities": []
+ },
+ {
+  "id": "F2.6",
+  "name": "Surface Geological Camera",
+  "family": "Rover",
+  "category": "Science",
+  "model": "lunar_geology_camera",
+  "mass_kg": 1.1,
+  "cost": 10,
+  "specs": {
+   "Mass": "~1.1 kg - REAL concept value",
+   "Power": "~11 W",
+   "Science value": "40",
+   "Cost tier": "1"
+  },
+  "load_w": 11.0,
+  "capabilities": [
+   "IMAGING"
+  ]
+ },
+ {
+  "id": "F3.1",
+  "name": "Solar Rover Power Pack",
+  "family": "Rover",
+  "category": "Power",
+  "model": "lunar_solar_power_pack",
+  "mass_kg": 50.0,
+  "cost": 20,
+  "specs": {
+   "Solar peak": "450 W - GAME/VIPER-like",
+   "Array mass": "~18 kg",
+   "Battery": "5 kWh / ~32 kg",
+   "Total power-system mass": "~50 kg",
+   "Advantages": "lighter / cheaper",
+   "Disadvantages": "darkness, dust, bad illumination",
+   "Cost tier": "2"
+  },
+  "load_w": 0,
+  "generation_w": 450.0,
+  "battery_kwh": 5,
+  "capabilities": []
+ },
+ {
+  "id": "F3.2",
+  "name": "MMRTG-like Power Source",
+  "family": "Rover",
+  "category": "Power",
+  "model": "rover_radioisotope_power",
+  "mass_kg": 45.0,
+  "cost": 50,
+  "specs": {
+   "Continuous electric output": "~110 W - REAL reference",
+   "Mass": "~45 kg - GAME/heritage-class",
+   "Works": "day/night, dust storms",
+   "Cost tier": "5"
+  },
+  "load_w": 0,
+  "generation_w": 110.0,
+  "capabilities": []
+ }
+]

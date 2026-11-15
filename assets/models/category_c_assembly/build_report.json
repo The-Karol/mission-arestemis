@@ -1,0 +1,254 @@
+[
+  {
+    "asset": "stage_handling_dolly",
+    "mesh_count": 20,
+    "triangles": 1904,
+    "nonmanifold": [],
+    "bytes": 167000
+  },
+  {
+    "asset": "lifting_spreader",
+    "mesh_count": 11,
+    "triangles": 1796,
+    "nonmanifold": [],
+    "bytes": 134796
+  },
+  {
+    "asset": "assembly_status_display",
+    "mesh_count": 11,
+    "triangles": 4048,
+    "nonmanifold": [],
+    "bytes": 228420
+  },
+  {
+    "asset": "security_metal_detector",
+    "mesh_count": 7,
+    "triangles": 2320,
+    "nonmanifold": [],
+    "bytes": 132240
+  },
+  {
+    "asset": "emergency_cabinet",
+    "mesh_count": 6,
+    "triangles": 1964,
+    "nonmanifold": [],
+    "bytes": 130940
+  },
+  {
+    "asset": "ups_backup_cabinet",
+    "mesh_count": 14,
+    "triangles": 2324,
+    "nonmanifold": [],
+    "bytes": 148832
+  },
+  {
+    "asset": "wall_vent_grille",
+    "mesh_count": 12,
+    "triangles": 1296,
+    "nonmanifold": [],
+    "bytes": 125988
+  },
+  {
+    "asset": "marked_technical_case",
+    "mesh_count": 11,
+    "triangles": 2330,
+    "nonmanifold": [],
+    "bytes": 162884
+  },
+  {
+    "asset": "cartridge_storage_case",
+    "mesh_count": 6,
+    "triangles": 1244,
+    "nonmanifold": [],
+    "bytes": 101716
+  },
+  {
+    "asset": "laboratory_sample_container",
+    "mesh_count": 6,
+    "triangles": 1412,
+    "nonmanifold": [],
+    "bytes": 107704
+  },
+  {
+    "asset": "adjustable_desk_lamp",
+    "mesh_count": 7,
+    "triangles": 692,
+    "nonmanifold": [],
+    "bytes": 81396
+  },
+  {
+    "asset": "outdoor_light_mast",
+    "mesh_count": 5,
+    "triangles": 540,
+    "nonmanifold": [],
+    "bytes": 54616
+  },
+  {
+    "asset": "assembly_parts_basket",
+    "mesh_count": 13,
+    "triangles": 1212,
+    "nonmanifold": [],
+    "bytes": 108456
+  },
+  {
+    "asset": "gallery_window_panel",
+    "mesh_count": 7,
+    "triangles": 756,
+    "nonmanifold": [],
+    "bytes": 69148
+  },
+  {
+    "asset": "pad_signal_beacon",
+    "mesh_count": 5,
+    "triangles": 444,
+    "nonmanifold": [],
+    "bytes": 56532
+  },
+  {
+    "asset": "complex_exterior_sign",
+    "mesh_count": 5,
+    "triangles": 7344,
+    "nonmanifold": [],
+    "bytes": 279820
+  },
+  {
+    "asset": "technical_wall_diagram",
+    "mesh_count": 10,
+    "triangles": 3160,
+    "nonmanifold": [],
+    "bytes": 205060
+  },
+  {
+    "asset": "orbital_wall_chart",
+    "mesh_count": 56,
+    "triangles": 7572,
+    "nonmanifold": [],
+    "bytes": 538112
+  },
+  {
+    "asset": "display_rocket_miniature",
+    "mesh_count": 7,
+    "triangles": 1970,
+    "nonmanifold": [],
+    "bytes": 142352
+  },
+  {
+    "asset": "mission_target_display",
+    "mesh_count": 5,
+    "triangles": 3680,
+    "nonmanifold": [],
+    "bytes": 186852
+  },
+  {
+    "asset": "laboratory_test_robot_arm",
+    "mesh_count": 9,
+    "triangles": 844,
+    "nonmanifold": [],
+    "bytes": 106280
+  },
+  {
+    "asset": "engineering_plotter",
+    "mesh_count": 11,
+    "triangles": 1092,
+    "nonmanifold": [],
+    "bytes": 107496
+  },
+  {
+    "asset": "rocket_external_sensor",
+    "mesh_count": 7,
+    "triangles": 596,
+    "nonmanifold": [],
+    "bytes": 67704
+  },
+  {
+    "asset": "fairing_release_latch",
+    "mesh_count": 4,
+    "triangles": 400,
+    "nonmanifold": [],
+    "bytes": 77944
+  },
+  {
+    "asset": "small_correction_thruster",
+    "mesh_count": 4,
+    "triangles": 384,
+    "nonmanifold": [],
+    "bytes": 52452
+  },
+  {
+    "asset": "telescope_aperture_cover",
+    "mesh_count": 5,
+    "triangles": 668,
+    "nonmanifold": [],
+    "bytes": 69692
+  },
+  {
+    "asset": "rocket_access_platform_half",
+    "mesh_count": 15,
+    "triangles": 1620,
+    "nonmanifold": [],
+    "bytes": 147788
+  },
+  {
+    "asset": "distant_exoplanet",
+    "mesh_count": 1,
+    "triangles": 2208,
+    "nonmanifold": [],
+    "bytes": 142164
+  },
+  {
+    "asset": "distant_gas_giant",
+    "mesh_count": 1,
+    "triangles": 2208,
+    "nonmanifold": [],
+    "bytes": 197680
+  },
+  {
+    "asset": "nebula_backdrop",
+    "mesh_count": 1,
+    "triangles": 108,
+    "nonmanifold": [],
+    "bytes": 126976
+  },
+  {
+    "asset": "satellite_display_miniature",
+    "mesh_count": 15,
+    "triangles": 2236,
+    "nonmanifold": [],
+    "bytes": 185444
+  },
+  {
+    "asset": "mission_target_photo",
+    "mesh_count": 4,
+    "triangles": 2664,
+    "nonmanifold": [],
+    "bytes": 143408
+  },
+  {
+    "asset": "extra_large_solar_wing",
+    "mesh_count": 35,
+    "triangles": 3780,
+    "nonmanifold": [],
+    "bytes": 314944
+  },
+  {
+    "asset": "rocket_external_antenna",
+    "mesh_count": 4,
+    "triangles": 304,
+    "nonmanifold": [],
+    "bytes": 51820
+  },
+  {
+    "asset": "animated_control_screen",
+    "mesh_count": 7,
+    "triangles": 2152,
+    "nonmanifold": [],
+    "bytes": 142636
+  },
+  {
+    "asset": "engine_transport_cradle",
+    "mesh_count": 17,
+    "triangles": 1708,
+    "nonmanifold": [],
+    "bytes": 160228
+  }
+]

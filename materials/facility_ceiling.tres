@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+[ext_resource type="Shader" path="res://materials/facility_panels.gdshader" id="1"]
+[ext_resource type="Texture2D" path="res://assets/models/architecture/wall_panel_T_Surface_painted_metal.png" id="2"]
+[resource]
+shader = ExtResource("1")
+shader_parameter/paint_color = Color(0.30,0.34,0.36,1)
+shader_parameter/ceiling = 1.0
+shader_parameter/enamel = ExtResource("2")

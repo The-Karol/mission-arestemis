@@ -1,0 +1,102 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/elevator_intro.gd" id="1"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_cabin"]
+size = Vector3(3.5, 0.22, 3.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cabin"]
+albedo_color = Color(0.24, 0.29, 0.32, 1)
+metallic = 0.16
+roughness = 0.8
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cabin_floor"]
+size = Vector3(3.5, 0.22, 3.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cabin_side"]
+size = Vector3(0.16, 2.9, 3.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cabin_back"]
+size = Vector3(3.5, 2.9, 0.16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cabin_door"]
+size = Vector3(1.62, 2.7, 0.14)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cabin_side"]
+size = Vector3(0.16, 2.9, 3.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cabin_back"]
+size = Vector3(3.5, 2.9, 0.16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cabin_door"]
+size = Vector3(1.62, 2.7, 0.14)
+
+[node name="ElevatorIntro" type="Node3D"]
+position = Vector3(-32, -3.5, 22.05)
+script = ExtResource("1")
+
+[node name="Cabin" type="Node3D" parent="."]
+
+[node name="CabinFloor" type="MeshInstance3D" parent="Cabin"]
+position = Vector3(0, -0.12, 0)
+mesh = SubResource("BoxMesh_cabin")
+material_override = SubResource("StandardMaterial3D_cabin")
+
+[node name="CabinFloorBody" type="StaticBody3D" parent="Cabin"]
+
+[node name="CabinFloorCollision" type="CollisionShape3D" parent="Cabin/CabinFloorBody"]
+position = Vector3(0, -0.12, 0)
+shape = SubResource("BoxShape3D_cabin_floor")
+
+[node name="LeftWallBody" type="StaticBody3D" parent="Cabin"]
+position = Vector3(-1.72, 1.45, 0)
+
+[node name="LeftWall" type="MeshInstance3D" parent="Cabin/LeftWallBody"]
+mesh = SubResource("BoxMesh_cabin_side")
+material_override = SubResource("StandardMaterial3D_cabin")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cabin/LeftWallBody"]
+shape = SubResource("BoxShape3D_cabin_side")
+
+[node name="RightWallBody" type="StaticBody3D" parent="Cabin"]
+position = Vector3(1.72, 1.45, 0)
+
+[node name="RightWall" type="MeshInstance3D" parent="Cabin/RightWallBody"]
+mesh = SubResource("BoxMesh_cabin_side")
+material_override = SubResource("StandardMaterial3D_cabin")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cabin/RightWallBody"]
+shape = SubResource("BoxShape3D_cabin_side")
+
+[node name="BackWallBody" type="StaticBody3D" parent="Cabin"]
+position = Vector3(0, 1.45, 1.72)
+
+[node name="BackWall" type="MeshInstance3D" parent="Cabin/BackWallBody"]
+mesh = SubResource("BoxMesh_cabin_back")
+material_override = SubResource("StandardMaterial3D_cabin")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cabin/BackWallBody"]
+shape = SubResource("BoxShape3D_cabin_back")
+
+[node name="LeftDoor" type="StaticBody3D" parent="Cabin"]
+position = Vector3(-0.82, 1.35, -1.72)
+
+[node name="DoorMesh" type="MeshInstance3D" parent="Cabin/LeftDoor"]
+mesh = SubResource("BoxMesh_cabin_door")
+material_override = SubResource("StandardMaterial3D_cabin")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cabin/LeftDoor"]
+shape = SubResource("BoxShape3D_cabin_door")
+
+[node name="RightDoor" type="StaticBody3D" parent="Cabin"]
+position = Vector3(0.82, 1.35, -1.72)
+
+[node name="DoorMesh" type="MeshInstance3D" parent="Cabin/RightDoor"]
+mesh = SubResource("BoxMesh_cabin_door")
+material_override = SubResource("StandardMaterial3D_cabin")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cabin/RightDoor"]
+shape = SubResource("BoxShape3D_cabin_door")
+
+[node name="PlayerStart" type="Marker3D" parent="."]
+position = Vector3(0, 0.05, 0.35)

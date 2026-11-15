@@ -1,0 +1,525 @@
+[
+ {
+  "id": "mars_sedimentary",
+  "title": "Mars Sedimentary Rocks",
+  "short_title": "MARS / GEOLOGY",
+  "description": "Send a robotic rover to Mars to investigate sedimentary rocks, analyze their chemistry and mineralogy, and identify geological evidence of an ancient watery environment. Select instruments capable of studying fine-grained rocks and subsurface structure while keeping the rover within its mass, power, communications, and launch constraints.",
+  "difficulty": "Medium / Hard",
+  "target_body": "Mars",
+  "spacecraft_type": "Rover",
+  "primary_objective": "Characterize sedimentary rocks and geological formations.",
+  "secondary_objectives": [
+   "Map geological layers",
+   "Compare mineral chemistry",
+   "Collect representative samples"
+  ],
+  "recommended_orbit": "200 km parking orbit  /  trans-Mars injection",
+  "mission_tags": [
+   "geology",
+   "spectroscopy",
+   "sampling"
+  ],
+  "instruments": [
+   "Geology camera",
+   "X-ray spectrometer",
+   "Sampling drill"
+  ],
+  "constraints": "Balance instrument mass, electrical power and sample storage.",
+  "code": "M01",
+  "altitude_km": 200,
+  "dv_target": 13000,
+  "recommended": [
+   "F1.1",
+   "F1.2",
+   "F1.4",
+   "F1.6",
+   "F3.2",
+   "A1.5",
+   "A1.8",
+   "A2.2",
+   "A4.1"
+  ],
+  "delivery_kg": 2300,
+  "required": [
+   "ELEMENTAL",
+   "MINERAL",
+   "IMAGING",
+   "DRILL",
+   "AUTONOMY",
+   "COMM"
+  ]
+ },
+ {
+  "id": "lunar_ice",
+  "title": "Lunar Polar Ice",
+  "short_title": "MOON / POLAR ICE",
+  "description": "Send a robotic rover to the lunar south polar region to search for hydrogen-rich material, identify possible water ice and other volatiles, and investigate subsurface deposits. Build a rover able to operate under difficult illumination and thermal conditions while powering drilling and analytical instruments.",
+  "difficulty": "Medium",
+  "target_body": "Moon",
+  "spacecraft_type": "Rover",
+  "primary_objective": "Search for and characterize polar water ice.",
+  "secondary_objectives": [
+   "Map hydrogen abundance",
+   "Sample subsurface material",
+   "Measure volatile composition"
+  ],
+  "recommended_orbit": "200 km parking orbit  /  trans-lunar injection",
+  "mission_tags": [
+   "hydrogen detection",
+   "drilling",
+   "volatile analysis"
+  ],
+  "instruments": [
+   "Neutron spectrometer",
+   "Polar drill",
+   "Volatile analyzer"
+  ],
+  "constraints": "Plan for limited sunlight, instrument power and cold polar conditions.",
+  "code": "M02",
+  "altitude_km": 200,
+  "dv_target": 12500,
+  "recommended": [
+   "F2.1",
+   "F2.2",
+   "F2.3",
+   "F2.6",
+   "F3.1",
+   "A1.5",
+   "A1.8",
+   "A2.2",
+   "A4.1"
+  ],
+  "delivery_kg": 850,
+  "required": [
+   "HYDROGEN",
+   "VOLATILES",
+   "DRILL",
+   "IMAGING",
+   "AUTONOMY",
+   "COMM"
+  ]
+ },
+ {
+  "id": "exoplanets",
+  "title": "Exoplanet Characterization",
+  "short_title": "DEEP SPACE / EXOPLANETS",
+  "description": "Launch a space telescope designed to detect and characterize faint planets near bright stars. Suppress stellar glare, maintain extremely precise pointing, collect spectra of selected planetary targets, and return enough data to study atmospheric composition.",
+  "difficulty": "Hard",
+  "target_body": "Sun-Earth L2",
+  "spacecraft_type": "Space Telescope",
+  "primary_objective": "Search for exoplanets and characterize candidate atmospheres.",
+  "secondary_objectives": [
+   "Suppress host-star glare",
+   "Record spectra",
+   "Maintain precise pointing"
+  ],
+  "recommended_orbit": "200 km parking orbit  /  Sun-Earth L2 transfer (~1.5 million km)",
+  "mission_tags": [
+   "coronagraph",
+   "spectroscopy",
+   "precision pointing"
+  ],
+  "instruments": [
+   "Coronagraph",
+   "Exoplanet spectrograph",
+   "Fine guidance sensor"
+  ],
+  "constraints": "Prioritize pointing stability, thermal control and clean optical observations.",
+  "code": "M03",
+  "altitude_km": 200,
+  "dv_target": 12600,
+  "recommended": [
+   "E6",
+   "E5",
+   "E7",
+   "E9",
+   "A1.3",
+   "A1.5",
+   "A1.9",
+   "A2.2",
+   "A3.2",
+   "A3.4",
+   "A4.4",
+   "A4.7",
+   "A5.2"
+  ],
+  "delivery_kg": 0,
+  "required": [
+   "CORONAGRAPHY",
+   "SPECTRA",
+   "FINE_GUIDANCE",
+   "POINTING",
+   "ATTITUDE",
+   "STORAGE",
+   "DEEP_RADIO",
+   "ANTENNA"
+  ]
+ },
+ {
+  "id": "galaxy_evolution",
+  "title": "Galaxy Evolution Survey",
+  "short_title": "DEEP SPACE / GALAXIES",
+  "description": "Launch an infrared space observatory able to image large regions of the sky and obtain spectra from distant galaxies. Study how galaxies formed and evolved while managing extremely high scientific data volume.",
+  "difficulty": "Medium / Hard",
+  "target_body": "Sun-Earth L2",
+  "spacecraft_type": "Space Telescope",
+  "primary_objective": "Study the evolution of distant galaxies.",
+  "secondary_objectives": [
+   "Survey wide fields",
+   "Acquire near-infrared images",
+   "Measure galaxy spectra"
+  ],
+  "recommended_orbit": "200 km parking orbit  /  Sun-Earth L2 transfer (~1.5 million km)",
+  "mission_tags": [
+   "wide-field imaging",
+   "near infrared",
+   "spectroscopy"
+  ],
+  "instruments": [
+   "Wide-field camera",
+   "Near-IR camera",
+   "Multi-object spectrograph"
+  ],
+  "constraints": "Balance observation depth, survey coverage, cooling and downlink capacity.",
+  "code": "M04",
+  "altitude_km": 200,
+  "dv_target": 12600,
+  "recommended": [
+   "E1",
+   "E2",
+   "E4",
+   "E7",
+   "E10",
+   "A1.3",
+   "A1.5",
+   "A1.9",
+   "A2.2",
+   "A3.2",
+   "A3.4",
+   "A4.4",
+   "A4.7",
+   "A5.2"
+  ],
+  "delivery_kg": 0,
+  "required": [
+   "WIDE_FIELD",
+   "NEAR_IR",
+   "SPECTRA",
+   "POINTING",
+   "ATTITUDE",
+   "STORAGE",
+   "DOWNLINK"
+  ]
+ },
+ {
+  "id": "asteroid",
+  "title": "Asteroid Reconnaissance",
+  "short_title": "ASTEROID / MAPPING",
+  "description": "Send an autonomous interplanetary spacecraft to rendezvous with a near-Earth asteroid. Map its shape and surface, measure mineral and thermal properties, and characterize the object using cameras, spectroscopy, and laser topography.",
+  "difficulty": "Medium / Hard",
+  "target_body": "Near-Earth asteroid",
+  "spacecraft_type": "Interplanetary Probe",
+  "primary_objective": "Map an asteroid's surface, topography and composition.",
+  "secondary_objectives": [
+   "Reconstruct surface shape",
+   "Identify minerals",
+   "Compare illuminated and shadowed terrain"
+  ],
+  "recommended_orbit": "200 km parking orbit  /  asteroid rendezvous",
+  "mission_tags": [
+   "mapping",
+   "spectroscopy",
+   "topography"
+  ],
+  "instruments": [
+   "Mapping camera",
+   "VIS/NIR spectrometer",
+   "Laser altimeter"
+  ],
+  "constraints": "Provide reliable deep-space communications and precise attitude control.",
+  "code": "M05",
+  "altitude_km": 200,
+  "dv_target": 13100,
+  "recommended": [
+   "D1.1",
+   "D2.1",
+   "D3",
+   "A1.2",
+   "A1.5",
+   "A1.8",
+   "A2.2",
+   "A3.2",
+   "A4.4",
+   "A4.7",
+   "A5.4"
+  ],
+  "delivery_kg": 0,
+  "required": [
+   "IMAGING",
+   "COMPOSITION",
+   "DEEP_RADIO",
+   "ANTENNA",
+   "POINTING",
+   "PROPULSION"
+  ]
+ },
+ {
+  "id": "comet",
+  "title": "Comet Investigation",
+  "short_title": "COMET / VOLATILES",
+  "description": "Send an interplanetary probe to a comet and investigate its nucleus, dust environment, and composition. Survive the encounter, collect imaging and dust measurements, analyze material around the comet, and transmit observations to Earth.",
+  "difficulty": "Hard",
+  "target_body": "Comet",
+  "spacecraft_type": "Interplanetary Probe",
+  "primary_objective": "Image the nucleus during a close flyby and measure the composition and flux of cometary dust.",
+  "secondary_objectives": [
+   "Image the nucleus",
+   "Analyze dust",
+   "Track volatile release"
+  ],
+  "recommended_orbit": "200 km parking orbit  /  comet flyby",
+  "mission_tags": [
+   "dust",
+   "volatiles",
+   "spectroscopy",
+   "imaging"
+  ],
+  "instruments": [
+   "Dust analyzer",
+   "Imaging camera",
+   "Volatile spectrometer"
+  ],
+  "constraints": "Account for changing solar power, dust exposure and deep-space downlink.",
+  "code": "M06",
+  "altitude_km": 200,
+  "dv_target": 13700,
+  "recommended": [
+   "D1.2",
+   "D2.1",
+   "D4",
+   "A1.3",
+   "A1.5",
+   "A1.9",
+   "A2.2",
+   "A3.2",
+   "A4.4",
+   "A4.7",
+   "A5.3"
+  ],
+  "delivery_kg": 0,
+  "required": [
+   "IMAGING",
+   "COMPOSITION",
+   "DUST",
+   "DEEP_RADIO",
+   "ANTENNA",
+   "PROPULSION",
+   "AUTONOMY"
+  ]
+ },
+ {
+  "id": "station_refueling",
+  "title": "Orbital Station Refueling",
+  "short_title": "EARTH / ORBITAL LOGISTICS",
+  "description": "Deliver propellant to an orbital station. Design an automated cargo spacecraft able to carry a useful fuel load, rendezvous, dock safely, and transfer propellant while preserving enough fuel for its own orbital maneuvers.",
+  "difficulty": "Medium",
+  "target_body": "LEO station",
+  "spacecraft_type": "Automated Cargo Spacecraft",
+  "primary_objective": "Rendezvous and dock at the station. Transfer at least 800 kg of fuel while keeping a separate maneuver reserve.",
+  "secondary_objectives": [
+   "Support autonomous rendezvous",
+   "Provide a docking interface",
+   "Manage propellant reserves"
+  ],
+  "recommended_orbit": "400 km low Earth orbit  /  station rendezvous",
+  "mission_tags": [
+   "payload mass",
+   "rendezvous",
+   "docking",
+   "propellant"
+  ],
+  "instruments": [
+   "Rendezvous sensor",
+   "Docking interface",
+   "Propellant module"
+  ],
+  "constraints": "Balance delivered cargo mass, propulsion reserves and docking compatibility.",
+  "code": "M07",
+  "altitude_km": 400,
+  "dv_target": 9500,
+  "recommended": [
+   "C1.2",
+   "C2.1",
+   "C2.2",
+   "C2.4",
+   "C3.1",
+   "A1.2",
+   "A1.5",
+   "A1.8",
+   "A4.2"
+  ],
+  "delivery_kg": 0,
+  "required": [
+   "CARGO_ENGINE",
+   "DOCKING_SENSORS",
+   "DOCKING_COMPUTER",
+   "COMM"
+  ]
+ },
+ {
+  "id": "earth_atmosphere",
+  "title": "Earth Atmosphere Observatory",
+  "short_title": "EARTH / ATMOSPHERE",
+  "description": "Launch a satellite to repeatedly measure the composition and temperature structure of Earth's atmosphere. Select instruments and an orbit that provide broad global coverage while maintaining adequate power, storage, calibration, and downlink capacity.",
+  "difficulty": "Medium",
+  "target_body": "Earth",
+  "spacecraft_type": "Satellite",
+  "primary_objective": "Measure atmospheric composition and temperature.",
+  "secondary_objectives": [
+   "Acquire spectral measurements",
+   "Compare different latitudes",
+   "Downlink repeated observations"
+  ],
+  "recommended_orbit": "705 km sun-synchronous orbit  /  98.2 deg",
+  "mission_tags": [
+   "spectrometers",
+   "radiometers",
+   "coverage",
+   "downlink"
+  ],
+  "instruments": [
+   "Atmospheric spectrometer",
+   "Radiometer",
+   "Data recorder"
+  ],
+  "constraints": "Trade observation coverage against generated data and available downlink.",
+  "code": "M08",
+  "altitude_km": 705,
+  "dv_target": 9950,
+  "recommended": [
+   "B2.1",
+   "B2.2",
+   "A1.2",
+   "A1.5",
+   "A1.8",
+   "A2.2",
+   "A3.2",
+   "A3.4",
+   "A3.6",
+   "E9",
+   "A4.3"
+  ],
+  "delivery_kg": 0,
+  "required": [
+   "ATMOSPHERIC_SPECTRA",
+   "THERMAL",
+   "ATTITUDE",
+   "ORBIT_FIX",
+   "STORAGE",
+   "DOWNLINK"
+  ]
+ },
+ {
+  "id": "earth_imaging",
+  "title": "Earth Imaging Satellite",
+  "short_title": "EARTH / SURFACE IMAGING",
+  "description": "Deploy an Earth-observation satellite capable of collecting useful multispectral imagery over large regions of the planet. Balance spatial resolution, swath width, revisit time, pointing accuracy, storage, and communications.",
+  "difficulty": "Easy / Medium",
+  "target_body": "Earth",
+  "spacecraft_type": "Satellite",
+  "primary_objective": "Capture useful images of Earth's surface.",
+  "secondary_objectives": [
+   "Maintain image stability",
+   "Cover selected regions",
+   "Store and transmit imagery"
+  ],
+  "recommended_orbit": "705 km sun-synchronous orbit  /  98.2 deg",
+  "mission_tags": [
+   "resolution",
+   "orbit",
+   "pointing",
+   "data rate"
+  ],
+  "instruments": [
+   "Earth imaging camera",
+   "Star tracker",
+   "Data recorder"
+  ],
+  "constraints": "Higher resolution increases pointing, storage and downlink requirements.",
+  "code": "M09",
+  "altitude_km": 705,
+  "dv_target": 9950,
+  "recommended": [
+   "B1.1",
+   "B2.2",
+   "A1.2",
+   "A1.5",
+   "A1.8",
+   "A2.2",
+   "A3.2",
+   "A3.4",
+   "E9",
+   "A4.3"
+  ],
+  "delivery_kg": 0,
+  "required": [
+   "IMAGING",
+   "ATTITUDE",
+   "POINTING",
+   "STORAGE",
+   "DOWNLINK"
+  ]
+ },
+ {
+  "id": "navigation",
+  "title": "Navigation Constellation Satellite",
+  "short_title": "EARTH / NAVIGATION",
+  "description": "Design and deploy one operational satellite for a GPS-like navigation constellation. Place it in the correct medium-Earth orbit, provide highly stable timing, transmit navigation signals, and maintain enough power and propulsion for long-term service.",
+  "difficulty": "Medium",
+  "target_body": "Earth MEO",
+  "spacecraft_type": "Satellite",
+  "primary_objective": "Provide precise navigation timing and signals.",
+  "secondary_objectives": [
+   "Maintain clock stability",
+   "Broadcast navigation data",
+   "Support orbit maintenance"
+  ],
+  "recommended_orbit": "20,200 km medium Earth orbit  /  55 deg",
+  "mission_tags": [
+   "precise clock",
+   "navigation signals",
+   "coverage",
+   "orbital stability"
+  ],
+  "instruments": [
+   "Precision clock",
+   "Navigation transmitter",
+   "Station-keeping module"
+  ],
+  "constraints": "A single satellite cannot provide full GPS-like coverage; this is a constellation element.",
+  "code": "M10",
+  "altitude_km": 20200,
+  "dv_target": 13000,
+  "recommended": [
+   "B3.2",
+   "B3.3",
+   "B3.4",
+   "A1.2",
+   "A1.5",
+   "A1.8",
+   "A2.2",
+   "A3.2",
+   "A3.4",
+   "A4.2",
+   "A5.2"
+  ],
+  "delivery_kg": 0,
+  "required": [
+   "CLOCK",
+   "NAV_BROADCAST",
+   "NAV_ARRAY",
+   "PROPULSION",
+   "ATTITUDE"
+  ]
+ }
+]

@@ -1,0 +1,666 @@
+{
+  "imports": [
+    {
+      "asset": "stage_handling_dolly",
+      "ok": true,
+      "meshes": 20,
+      "size": [
+        3.02,
+        1.65,
+        1.0859
+      ],
+      "materials": 20,
+      "animation_count": 0,
+      "image_count": 3,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "lifting_spreader",
+      "ok": true,
+      "meshes": 11,
+      "size": [
+        3.6,
+        0.37,
+        1.685
+      ],
+      "materials": 11,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "assembly_status_display",
+      "ok": true,
+      "meshes": 11,
+      "size": [
+        1.35,
+        0.55,
+        2.04
+      ],
+      "materials": 11,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "security_metal_detector",
+      "ok": true,
+      "meshes": 7,
+      "size": [
+        1.52,
+        0.58,
+        2.305
+      ],
+      "materials": 7,
+      "animation_count": 0,
+      "image_count": 1,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "emergency_cabinet",
+      "ok": true,
+      "meshes": 6,
+      "size": [
+        0.72,
+        0.2675,
+        1.5
+      ],
+      "materials": 6,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "ups_backup_cabinet",
+      "ok": true,
+      "meshes": 14,
+      "size": [
+        0.65,
+        0.6925,
+        1.3
+      ],
+      "materials": 14,
+      "animation_count": 0,
+      "image_count": 1,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "wall_vent_grille",
+      "ok": true,
+      "meshes": 12,
+      "size": [
+        0.64,
+        0.0925,
+        0.44
+      ],
+      "materials": 12,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "marked_technical_case",
+      "ok": true,
+      "meshes": 11,
+      "size": [
+        0.76,
+        0.4705,
+        0.6225
+      ],
+      "materials": 11,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "cartridge_storage_case",
+      "ok": true,
+      "meshes": 6,
+      "size": [
+        0.57,
+        0.4225,
+        0.41
+      ],
+      "materials": 6,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "laboratory_sample_container",
+      "ok": true,
+      "meshes": 6,
+      "size": [
+        0.44,
+        0.3325,
+        0.3525
+      ],
+      "materials": 6,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "adjustable_desk_lamp",
+      "ok": true,
+      "meshes": 7,
+      "size": [
+        0.565,
+        0.23,
+        0.775
+      ],
+      "materials": 7,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "outdoor_light_mast",
+      "ok": true,
+      "meshes": 5,
+      "size": [
+        1.11,
+        0.5,
+        4.05
+      ],
+      "materials": 5,
+      "animation_count": 0,
+      "image_count": 1,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "assembly_parts_basket",
+      "ok": true,
+      "meshes": 13,
+      "size": [
+        0.655,
+        0.43,
+        0.4475
+      ],
+      "materials": 13,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "gallery_window_panel",
+      "ok": true,
+      "meshes": 7,
+      "size": [
+        2.44,
+        0.12,
+        2.2
+      ],
+      "materials": 7,
+      "animation_count": 0,
+      "image_count": 1,
+      "alpha_modes": [
+        "OPAQUE",
+        "BLEND"
+      ]
+    },
+    {
+      "asset": "pad_signal_beacon",
+      "ok": true,
+      "meshes": 5,
+      "size": [
+        0.25,
+        0.25,
+        1.08
+      ],
+      "materials": 5,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "complex_exterior_sign",
+      "ok": true,
+      "meshes": 5,
+      "size": [
+        2.2,
+        0.1408,
+        1.04
+      ],
+      "materials": 5,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "technical_wall_diagram",
+      "ok": true,
+      "meshes": 10,
+      "size": [
+        1.45,
+        0.119,
+        1.1
+      ],
+      "materials": 10,
+      "animation_count": 0,
+      "image_count": 3,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "orbital_wall_chart",
+      "ok": true,
+      "meshes": 56,
+      "size": [
+        1.65,
+        0.141,
+        1.24
+      ],
+      "materials": 56,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "display_rocket_miniature",
+      "ok": true,
+      "meshes": 7,
+      "size": [
+        0.4,
+        0.4098,
+        0.9
+      ],
+      "materials": 7,
+      "animation_count": 0,
+      "image_count": 3,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "mission_target_display",
+      "ok": true,
+      "meshes": 5,
+      "size": [
+        0.65,
+        0.4578,
+        0.59
+      ],
+      "materials": 5,
+      "animation_count": 0,
+      "image_count": 3,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "laboratory_test_robot_arm",
+      "ok": true,
+      "meshes": 9,
+      "size": [
+        1.1694,
+        0.6,
+        1.115
+      ],
+      "materials": 9,
+      "animation_count": 0,
+      "image_count": 3,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "engineering_plotter",
+      "ok": true,
+      "meshes": 11,
+      "size": [
+        1.45,
+        0.83,
+        0.97
+      ],
+      "materials": 11,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "rocket_external_sensor",
+      "ok": true,
+      "meshes": 7,
+      "size": [
+        0.32,
+        0.26,
+        0.195
+      ],
+      "materials": 7,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "fairing_release_latch",
+      "ok": true,
+      "meshes": 4,
+      "size": [
+        0.37,
+        0.18,
+        0.15
+      ],
+      "materials": 4,
+      "animation_count": 0,
+      "image_count": 3,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "small_correction_thruster",
+      "ok": true,
+      "meshes": 3,
+      "size": [
+        0.4,
+        0.4,
+        0.5
+      ],
+      "materials": 3,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "telescope_aperture_cover",
+      "ok": true,
+      "meshes": 5,
+      "size": [
+        1.22,
+        1.1,
+        0.145
+      ],
+      "materials": 5,
+      "animation_count": 1,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "rocket_access_platform_half",
+      "ok": true,
+      "meshes": 15,
+      "size": [
+        5.0,
+        4.0,
+        1.3075
+      ],
+      "materials": 15,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "distant_exoplanet",
+      "ok": true,
+      "meshes": 1,
+      "size": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "materials": 1,
+      "animation_count": 0,
+      "image_count": 1,
+      "alpha_modes": [
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "distant_gas_giant",
+      "ok": true,
+      "meshes": 1,
+      "size": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "materials": 1,
+      "animation_count": 0,
+      "image_count": 1,
+      "alpha_modes": [
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "nebula_backdrop",
+      "ok": true,
+      "meshes": 1,
+      "size": [
+        8.0,
+        0.025,
+        4.5
+      ],
+      "materials": 1,
+      "animation_count": 0,
+      "image_count": 1,
+      "alpha_modes": [
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "satellite_display_miniature",
+      "ok": true,
+      "meshes": 15,
+      "size": [
+        1.08,
+        0.3298,
+        0.6328
+      ],
+      "materials": 15,
+      "animation_count": 0,
+      "image_count": 3,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "mission_target_photo",
+      "ok": true,
+      "meshes": 4,
+      "size": [
+        0.46,
+        0.0698,
+        0.34
+      ],
+      "materials": 4,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "extra_large_solar_wing",
+      "ok": true,
+      "meshes": 35,
+      "size": [
+        4.06,
+        1.6,
+        0.138
+      ],
+      "materials": 35,
+      "animation_count": 0,
+      "image_count": 3,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "rocket_external_antenna",
+      "ok": true,
+      "meshes": 4,
+      "size": [
+        0.24,
+        0.24,
+        0.6275
+      ],
+      "materials": 4,
+      "animation_count": 0,
+      "image_count": 2,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "animated_control_screen",
+      "ok": true,
+      "meshes": 7,
+      "size": [
+        1.12,
+        0.167,
+        0.76
+      ],
+      "materials": 7,
+      "animation_count": 4,
+      "image_count": 1,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "asset": "engine_transport_cradle",
+      "ok": true,
+      "meshes": 17,
+      "size": [
+        1.56,
+        1.25,
+        0.7786
+      ],
+      "materials": 17,
+      "animation_count": 0,
+      "image_count": 3,
+      "alpha_modes": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    }
+  ],
+  "source_problems": []
+}

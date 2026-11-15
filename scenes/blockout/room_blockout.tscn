@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/room_blockout.gd" id="1"]
+
+[node name="RoomBlockout" type="Node3D"]
+script = ExtResource("1")
+
+[node name="Architecture" type="Node3D" parent="."]
+
+[node name="DoorsAnchor" type="Node3D" parent="."]
+
+[node name="PropsAnchor" type="Node3D" parent="."]
+
